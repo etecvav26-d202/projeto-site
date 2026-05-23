@@ -30,3 +30,6 @@ Esta página trará sugestões literárias personalizadas, como:
 - indicações por gênero;
 - destaques de leitura do mês;
 - sugestões baseadas em tendências e avaliações.
+
+## Eventos 
+
