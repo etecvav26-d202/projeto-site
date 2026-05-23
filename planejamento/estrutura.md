@@ -10,3 +10,11 @@ A página inicial será a apresentação da cafeteria, destacando sua identidade
 
 ## Cardápio
 
+Nesta página estarão listados todos os produtos consumidos no local, incluindo:
+- cafés especiais;
+- bebidas quentes e geladas;
+- sobremesas;
+- combos e sugestões da casa.
+
+Cada item poderá conter descrição e preço, facilitando a escolha do usuário.
+
