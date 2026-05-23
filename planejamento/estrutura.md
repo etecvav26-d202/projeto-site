@@ -18,3 +18,8 @@ Cada item poderá conter descrição e preço, facilitando a escolha do usuário
 
 ## Livros
 
+O catálogo de livros será exibido nesta seção, permitindo que o usuário:
+- visualize livros disponíveis para compra ou aluguel;
+- veja detalhes como autor, gênero e sinopse;
+- descubra novidades e obras mais populares.
+
