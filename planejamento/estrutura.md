@@ -25,3 +25,8 @@ O catálogo de livros será exibido nesta seção, permitindo que o usuário:
 
 ## Recomendações
 
+Esta página trará sugestões literárias personalizadas, como:
+- livros recomendados pela cafeteria;
+- indicações por gênero;
+- destaques de leitura do mês;
+- sugestões baseadas em tendências e avaliações.
