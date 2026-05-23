@@ -23,3 +23,5 @@ O catálogo de livros será exibido nesta seção, permitindo que o usuário:
 - veja detalhes como autor, gênero e sinopse;
 - descubra novidades e obras mais populares.
 
+## Recomendações
+
