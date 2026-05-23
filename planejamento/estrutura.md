@@ -4,3 +4,5 @@ O site da cafeteria será organizado em páginas principais, com navegação sim
 
 # Páginas do Site
 
+## Home (Início)
+
