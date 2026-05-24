@@ -27,3 +27,5 @@ O site também oferecerá uma experiência visual sofisticada, utilizando uma id
 O Café Lumière busca resolver a dificuldade que muitos leitores e amantes de cafeterias possuem em encontrar um ambiente que reúna, ao mesmo tempo, lazer, cultura, conforto e praticidade.
 
 Atualmente, muitas plataformas oferecem apenas vendas de livros ou serviços de cafeteria de forma separada. O diferencial do Café Lumière é integrar essas experiências em um único lugar, permitindo que os usuários descubram novas leituras, façam reservas, conheçam produtos e participem de atividades culturais.
+
+Dessa forma, o site proporciona mais comodidade, praticidade e interação para pessoas que valorizam ambientes aconchegantes e experiências culturais.
