@@ -34,3 +34,4 @@ O site contará com um menu responsivo, que se adapta automaticamente a diferent
 
 ## Sistema de login e cadastro
 
+Permite criação de conta, acesso personalizado e integração com carrinho, reservas e recomendações.
