@@ -10,11 +10,15 @@ A logo do Café Lumière possui um design minimalista e marcante, combinando ele
 
 | Logo com fundo transparente | Logo com fundo |
 | --- | --- |
-| ![Logo com fundo transparente](https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png) | ![Logo com fundo](https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo_com_fundo.png)|
+| ![Logo com fundo transparente](https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png) | ![Logo com fundo](https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo_com_fundo.png)| #9b6e4d |
  
 ## Paleta de cores
 
 A paleta de cores utiliza tons neutros e quentes, como marrom, bege e creme. Essas cores foram escolhidas para transmitir conforto, elegância e sensação de acolhimento, além de criarem uma estética refinada e agradável visualmente. O marrom representa o café e o aconchego do ambiente, enquanto os tons claros equilibram o visual com suavidade e modernidade.
+
+| Imagem da tonalidade da cor | HEX |
+| --- | --- |
+| ![Cor 1](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor1.png) | 
 
 ## Tipografia
 
