@@ -73,3 +73,5 @@ Após o cadastro, o usuário será automaticamente logado no sistema.
 
 ## Navegação
 
+A navegação será feita por um menu fixo superior (navbar), com acesso direto a todas as páginas. No mobile, esse menu será adaptado para um formato hambúrguer (☰) para facilitar o uso em telas menores.
+
