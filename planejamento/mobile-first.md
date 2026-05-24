@@ -35,3 +35,5 @@ Também serão utilizados botões acessíveis e espaçamento adequado para facil
 
 ## Imagens, textos e organização da tela
 
+As imagens do site serão otimizadas para evitar carregamentos lentos e garantir melhor desempenho em dispositivos móveis. Além disso, elas serão ajustadas proporcionalmente ao tamanho da tela, mantendo a qualidade visual e a estética sofisticada do Café Lumière sem comprometer a navegação.
+
