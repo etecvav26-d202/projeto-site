@@ -31,3 +31,5 @@ Atualmente, muitas plataformas oferecem apenas vendas de livros ou serviços de 
 Dessa forma, o site proporciona mais comodidade, praticidade e interação para pessoas que valorizam ambientes aconchegantes e experiências culturais.
 
 ## Informações e serviços oferecidos
+
+O site disponibilizará diversos serviços e informações voltados à experiência dos clientes, entre eles:
