@@ -14,3 +14,5 @@ O site incluirá uma galeria com imagens do ambiente da cafeteria, dos produtos 
 
 ## Vídeos
 
+Vídeos curtos serão utilizados para apresentar o ambiente da cafeteria, divulgar eventos culturais ou mostrar a experiência dos clientes no local.
+
