@@ -31,3 +31,5 @@ No celular, o menu será adaptado para o formato “hambúrguer” (☰), ocupan
 - Contato;
 - Login.
 
+Também serão utilizados botões acessíveis e espaçamento adequado para facilitar o toque na tela.
+
