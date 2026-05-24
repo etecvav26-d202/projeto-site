@@ -6,3 +6,5 @@ O site da cafeteria contará com diferentes recursos interativos e visuais para 
 
 ## Formulário de contato
 
+Será utilizado um formulário na página de Contato para que os usuários possam enviar mensagens, dúvidas ou sugestões diretamente para a cafeteria.
+
