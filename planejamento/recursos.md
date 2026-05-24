@@ -12,3 +12,5 @@ Será utilizado um formulário na página de Contato para que os usuários possa
 
 O site incluirá uma galeria com imagens do ambiente da cafeteria, dos produtos do cardápio, dos livros disponíveis e de eventos realizados, ajudando a transmitir a identidade visual do espaço.
 
+## Vídeos
+
