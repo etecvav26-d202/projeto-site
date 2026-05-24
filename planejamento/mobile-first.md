@@ -9,3 +9,9 @@ Dessa forma, priorizar a experiência mobile garante mais praticidade, acessibil
 ## Como o site será adaptado para celular
 
 O site será desenvolvido com um layout responsivo, permitindo que todos os elementos se ajustem automaticamente ao tamanho da tela do dispositivo utilizado.
+
+A versão mobile terá:
+- navegação simples e intuitiva;
+- carregamento rápido;
+- organização vertical dos conteúdos;
+- imagens adaptadas ao tamanho da tela;
