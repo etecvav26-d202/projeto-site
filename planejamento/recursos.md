@@ -26,4 +26,6 @@ O site incluirá gráficos simples ou destaques visuais para mostrar livros mais
 
 # Animações
 
+Animações leves serão aplicadas em botões, transições de página e elementos visuais, deixando o site mais moderno e agradável sem prejudicar a usabilidade.
+
 
