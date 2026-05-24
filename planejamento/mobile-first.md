@@ -20,3 +20,4 @@ O objetivo é oferecer uma experiência agradável e organizada mesmo em telas m
 
 ## Menu
 
+No celular, o menu será adaptado para o formato “hambúrguer” (☰), ocupando menos espaço na tela e facilitando a navegação. As opções do menu serão organizadas de forma simples e objetiva, permitindo acesso rápido às principais páginas do site, como:
