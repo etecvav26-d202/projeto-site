@@ -51,3 +51,8 @@ O carrinho permitirá visualizar todos os itens selecionados (cafés, sobremesas
 
 ## Contato
 
+A página de contato reunirá informações importantes da cafeteria, como:
+- formulário de mensagens;
+- redes sociais;
+- endereço e localização;
+- horário de funcionamento.
