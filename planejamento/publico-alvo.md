@@ -13,3 +13,13 @@ Além disso, o espaço também pode atrair pessoas de outras idades interessadas
 ## Interesses do público
 
 O público do Café Lumière possui interesses relacionados à leitura, entretenimento e ambientes acolhedores. Entre os principais interesses estão:
+
+- leitura de livros;
+- cafeterias e cafés especiais;
+- ambientes confortáveis e esteticamente agradáveis;
+- cultura literária;
+- estudo e produtividade;
+- eventos culturais;
+- experiências modernas e sofisticadas;
+- recomendações de livros;
+- socialização em ambientes tranquilos.
