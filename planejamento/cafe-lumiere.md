@@ -16,3 +16,4 @@ A identidade visual do “Café Lumière” foi pensada para transmitir sofistic
 
 O público-alvo do site é formado principalmente por jovens e adultos entre 14 e 30 anos que possuem interesse em leitura, cultura, cafés e estudos. O projeto atende às necessidades de pessoas que procuram um ambiente agradável para descobrir novos livros, relaxar, estudar e viver experiências relacionadas ao universo literário.
 
+Além de sua proposta criativa, o Café Lumière também apresenta um diferencial moderno e profissional ao integrar comércio, interação social e entretenimento em uma única plataforma.
