@@ -1,6 +1,10 @@
 # ☕ Café Lumière
 
-## ![Logo Café Lumière](<img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png" width="300">) Café Lumière
+<p align="center">
+  <img src="https://github.com/etecvav26-d202/projeto-site/raw/main/logo/logo.png" width="300">
+</p>
+
+## Café Lumière
 
 
 O Café Lumière é uma cafeteria literária criada para unir o aconchego de um café sofisticado ao universo encantador da leitura. Inspirado em cafeterias europeias e bibliotecas acolhedoras, o espaço oferece uma experiência única para pessoas apaixonadas por livros, cultura e momentos tranquilos.
