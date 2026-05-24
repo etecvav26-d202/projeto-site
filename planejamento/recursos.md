@@ -20,3 +20,5 @@ Vídeos curtos serão utilizados para apresentar o ambiente da cafeteria, divulg
 
 Um mapa integrado será usado na página de contato para facilitar a localização da cafeteria, permitindo que o usuário visualize o endereço e planeje sua visita.
 
+## Elementos visuais e interativos
+
