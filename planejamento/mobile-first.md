@@ -39,3 +39,4 @@ As imagens do site serão otimizadas para evitar carregamentos lentos e garantir
 
 Os textos serão organizados de maneira objetiva e confortável para leitura em telas menores. Serão utilizados tamanhos de fonte adequados, bom espaçamento entre linhas e títulos destacados, permitindo que as informações sejam facilmente visualizadas pelos usuários.
 
+Já a organização da tela seguirá um estilo minimalista e responsivo, priorizando os conteúdos mais importantes logo no início da página. Os elementos serão distribuídos verticalmente para facilitar a navegação no celular, evitando excesso de informações e proporcionando uma experiência visual mais elegante, limpa e agradável.
