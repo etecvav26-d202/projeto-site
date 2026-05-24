@@ -61,4 +61,5 @@ A página de contato reunirá informações importantes da cafeteria, como:
 
 O site contará com uma área central de autenticação, acessada pela opção “Login” no menu principal. Ao clicar, o usuário será direcionado para uma página de acesso à conta.
 
+Nesta página, o usuário poderá inserir e-mail e senha para acessar sua conta. O objetivo é permitir acesso rápido às funcionalidades personalizadas do site, como reservas, carrinho e recomendações.
 
