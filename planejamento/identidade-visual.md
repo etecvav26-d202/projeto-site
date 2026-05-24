@@ -18,7 +18,7 @@ A paleta de cores utiliza tons neutros e quentes, como marrom, bege e creme. Ess
 
 | Imagem da tonalidade da cor | HEX |
 | --- | --- |
-| ![Cor 1](<img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor1.png" width="200">) | #9b6e4d |
+| <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor1.png" width="200"> | #9b6e4d |
 
 ## Tipografia
 
