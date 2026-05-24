@@ -33,3 +33,5 @@ No celular, o menu será adaptado para o formato “hambúrguer” (☰), ocupan
 
 Também serão utilizados botões acessíveis e espaçamento adequado para facilitar o toque na tela.
 
+## Imagens, textos e organização da tela
+
