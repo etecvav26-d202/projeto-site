@@ -75,3 +75,4 @@ Após o cadastro, o usuário será automaticamente logado no sistema.
 
 A navegação será feita por um menu fixo superior (navbar), com acesso direto a todas as páginas. No mobile, esse menu será adaptado para um formato hambúrguer (☰) para facilitar o uso em telas menores.
 
+O usuário poderá navegar livremente entre as páginas, com botões de acesso rápido na Home direcionando para Cardápio, Livros, Reservas, Eventos e Login. O carrinho será acessível de forma constante para facilitar a experiência de compra.
