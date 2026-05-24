@@ -28,3 +28,4 @@ O público também valoriza praticidade e experiências personalizadas, como a p
 
 ## Necessidades do público
 
+O Café Lumière busca atender às necessidades de pessoas que desejam unir conforto, lazer e cultura em um único ambiente. Muitas vezes, leitores e estudantes têm dificuldade em encontrar locais que ofereçam tranquilidade, boa ambientação e fácil acesso a livros e produtos de cafeteria.
