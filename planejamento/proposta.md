@@ -42,4 +42,10 @@ O site disponibilizará diversos serviços e informações voltados à experiên
 - acesso ao clube de leitura;
 - login e cadastro de usuários.
 
-
+### Informações:
+- descrição de produtos;
+- recomendações de leitura;
+- avaliações e comentários;
+- localização e imagens da cafeteria;
+- horários de funcionamento;
+- redes sociais e formas de contato.
