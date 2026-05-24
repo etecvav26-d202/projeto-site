@@ -15,3 +15,5 @@ A versão mobile terá:
 - carregamento rápido;
 - organização vertical dos conteúdos;
 - imagens adaptadas ao tamanho da tela;
+
+O objetivo é oferecer uma experiência agradável e organizada mesmo em telas menores, mantendo a identidade visual elegante e minimalista do Café Lumière.
