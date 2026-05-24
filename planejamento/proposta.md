@@ -33,3 +33,13 @@ Dessa forma, o site proporciona mais comodidade, praticidade e interação para 
 ## Informações e serviços oferecidos
 
 O site disponibilizará diversos serviços e informações voltados à experiência dos clientes, entre eles:
+
+### Serviços
+- compra de livros online;
+- visualização do cardápio;
+- reservas de mesas;
+- participação em eventos literários;
+- acesso ao clube de leitura;
+- login e cadastro de usuários.
+
+
