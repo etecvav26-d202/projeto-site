@@ -13,3 +13,6 @@ O tema do site Café Lumière foi desenvolvido com a proposta de unir o universo
 O site combina funcionalidades de uma livraria online com os serviços de uma cafeteria temática. Nele, os usuários poderão comprar livros, descobrir recomendações literárias, reservar mesas, conhecer o cardápio da cafeteria e participar de eventos culturais e clubes de leitura. Dessa forma, o projeto une entretenimento, cultura e experiência gastronômica em um único ambiente digital.
 
 A identidade visual do “Café Lumière” foi pensada para transmitir sofisticação, conforto e modernidade. A paleta de cores utiliza tons bege, creme e marrom, inspirados em cafeterias elegantes e bibliotecas aconchegantes. O design segue um estilo minimalista e refinado, com elementos visuais suaves e tipografia marcante, reforçando a sensação de exclusividade e acolhimento.
+
+O público-alvo do site é formado principalmente por jovens e adultos entre 14 e 30 anos que possuem interesse em leitura, cultura, cafés e estudos. O projeto atende às necessidades de pessoas que procuram um ambiente agradável para descobrir novos livros, relaxar, estudar e viver experiências relacionadas ao universo literário.
+
