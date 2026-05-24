@@ -42,9 +42,15 @@ A identidade visual foi pensada para funcionar de forma versátil em diferentes 
 - aventais;
 - materiais promocionais.
 
+Exemplos:
+
 | Copo Térmico | Sacola | Embalagem de Doce | Invólucros | Pacote de Café | Avental do Funcionário |
 | --- | --- | --- | --- | --- | --- |
 | ![Copo Térmico](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/01-copo-termico.png) | ![Sacola](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/03-sacola-papel.png) | ![Embalagem de Doce](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/04-embalagem-doces.png) | ![Invólucros](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/06-involucros-sanduiche.png) | ![Pacote de Café](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/07-pacote-cafe.png) | ![Avental do Funcionário](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/10-avental-barista.png) |
 
 
 O resultado é uma identidade visual moderna, elegante e memorável, capaz de representar o conceito do Café Lumière como uma cafeteria literária sofisticada e acolhedora.
+
+## Apresentação da Identidade Visual Formatada
+
+https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/identidade.png
