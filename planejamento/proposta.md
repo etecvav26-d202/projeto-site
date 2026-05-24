@@ -21,3 +21,6 @@ Entre os principais conteúdos disponíveis estarão:
 - área de login e cadastro de usuários.
 
 O site também oferecerá uma experiência visual sofisticada, utilizando uma identidade elegante baseada em tons neutros e elementos minimalistas.
+
+## Problema que o site pretende resolver
+
