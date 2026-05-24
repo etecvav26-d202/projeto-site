@@ -30,7 +30,7 @@ A identidade visual foi pensada para funcionar de forma versátil em diferentes 
 
 | Copo Térmico | Sacola | Embalagem de Doce | Invólucros | Pacote de Café | Avental do Funcionário |
 | --- | --- | --- | --- | --- | --- |
-| ![Copo Térmico](projeto-site/imagens/01-copo-termico.png) | ![Sacola](imagens/03-sacola-papel.png) | ![Embalagem de Doce](imagens/04-embalagem-doces.png) | ![Invólucros](imagens/06-involucros-sanduiche.png) | ![Pacote de Café](imagens/07-pacote-cafe.png) | ![Avental do Funcionário](imagens/10-avental-barista.png) |
+| ![Copo Térmico](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/01-copo-termico.png) | ![Sacola](imagens/03-sacola-papel.png) | ![Embalagem de Doce](imagens/04-embalagem-doces.png) | ![Invólucros](imagens/06-involucros-sanduiche.png) | ![Pacote de Café](imagens/07-pacote-cafe.png) | ![Avental do Funcionário](imagens/10-avental-barista.png) |
 
 
 O resultado é uma identidade visual moderna, elegante e memorável, capaz de representar o conceito do Café Lumière como uma cafeteria literária sofisticada e acolhedora.
