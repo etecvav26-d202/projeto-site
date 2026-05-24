@@ -6,4 +6,6 @@ O site do *Café Lumière* tem como principal objetivo representar digitalmente 
 
 ## Conteúdo do site
 
+Os usuários encontrarão um ambiente digital organizado, intuitivo e visualmente agradável, inspirado em cafeterias premium e bibliotecas aconchegantes. O site contará com diferentes seções voltadas tanto para a experiência gastronômica quanto para o universo literário.
+
 
