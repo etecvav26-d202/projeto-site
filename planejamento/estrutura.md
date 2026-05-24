@@ -63,3 +63,9 @@ O site contará com uma área central de autenticação, acessada pela opção �
 
 Nesta página, o usuário poderá inserir e-mail e senha para acessar sua conta. O objetivo é permitir acesso rápido às funcionalidades personalizadas do site, como reservas, carrinho e recomendações.
 
+Caso o usuário ainda não possua uma conta, haverá uma opção clara de “Cadastre-se”, localizada abaixo do formulário de login e, ao selecioná-la, o usuário será redirecionado para o formulário de criação de conta, onde deverá preencher:
+- nome completo;
+- e-mail;
+- senha;
+- confirmação de senha.
+
