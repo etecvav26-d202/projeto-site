@@ -12,6 +12,8 @@ A logo do Café Lumière possui um design minimalista e marcante, combinando ele
 
 A paleta de cores utiliza tons neutros e quentes, como marrom, bege e creme. Essas cores foram escolhidas para transmitir conforto, elegância e sensação de acolhimento, além de criarem uma estética refinada e agradável visualmente. O marrom representa o café e o aconchego do ambiente, enquanto os tons claros equilibram o visual com suavidade e modernidade.
 
+## Tipografia
+
 Na tipografia, foram utilizadas fontes sofisticadas e elegantes que reforçam o estilo premium da marca. A fonte principal apresenta características clássicas e refinadas, trazendo personalidade ao nome “Café Lumière”, enquanto as fontes secundárias equilibram o design com legibilidade e modernidade.
 
 Além disso, a identidade visual foi pensada para funcionar de forma versátil em diferentes aplicações, como:
