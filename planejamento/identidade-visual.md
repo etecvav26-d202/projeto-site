@@ -30,6 +30,10 @@ A paleta de cores utiliza tons neutros e quentes, como marrom, bege e creme. Ess
 
 Na tipografia, foram utilizadas fontes sofisticadas e elegantes que reforçam o estilo premium da marca. A fonte principal apresenta características clássicas e refinadas, trazendo personalidade ao nome “Café Lumière”, enquanto as fontes secundárias equilibram o design com legibilidade e modernidade.
 
+| Fonte Principal | Fonte Intermediária | Fonte do Texto |
+| :---: | :---: | :---: |
+| <span style="font-family: 'Playfair Display'; font-size: 28px;">Aa</span><br>Playfair Display | <span style="font-family: 'Cormorant Garamond'; font-size: 28px;">Aa</span><br>Cormorant Garamond | <span style="font-family: 'Lora'; font-size: 28px;">Aa</span><br>Lora |
+
 ## Aplicações
 
 A identidade visual foi pensada para funcionar de forma versátil em diferentes aplicações, como:
