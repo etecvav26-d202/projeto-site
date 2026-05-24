@@ -30,4 +30,5 @@ Animações leves serão aplicadas em botões, transições de página e element
 
 ## Menu responsivo
 
+O site contará com um menu responsivo, que se adapta automaticamente a diferentes tamanhos de tela. No celular, ele será transformado em um menu do tipo hambúrguer (☰), garantindo fácil navegação.
 
