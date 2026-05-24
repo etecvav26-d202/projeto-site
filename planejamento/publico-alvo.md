@@ -9,3 +9,6 @@ O público-alvo do Café Lumière é composto principalmente por jovens e adulto
 A principal faixa etária do público do Café Lumière está entre 14 e 30 anos. Essa faixa inclui adolescentes, estudantes, universitários e jovens adultos que possuem forte conexão com tendências modernas, cultura digital e ambientes sofisticados.
 
 Além disso, o espaço também pode atrair pessoas de outras idades interessadas em literatura, cafés especiais e experiências culturais diferenciadas.
+
+## Interesses do público
+
