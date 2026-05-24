@@ -49,3 +49,5 @@ O carrinho permitirá visualizar todos os itens selecionados (cafés, sobremesas
 - remover itens;
 - revisar pedido antes da finalização.
 
+## Contato
+
