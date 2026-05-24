@@ -28,8 +28,9 @@ A identidade visual foi pensada para funcionar de forma versátil em diferentes 
 - aventais;
 - materiais promocionais.
 
-| Produtos | Imagens |
-| --- | --- |
+| Copo Térmico | Sacola | Embalagem de Doce | Invólucros | Pacote de Café | Avental do Funcionário |
+| --- | --- | --- | --- | --- | --- |
+
 
 
 O resultado é uma identidade visual moderna, elegante e memorável, capaz de representar o conceito do Café Lumière como uma cafeteria literária sofisticada e acolhedora.
