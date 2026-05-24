@@ -69,3 +69,4 @@ Caso o usuário ainda não possua uma conta, haverá uma opção clara de “Cad
 - senha;
 - confirmação de senha.
 
+Após o cadastro, o usuário será automaticamente logado no sistema.
