@@ -16,6 +16,8 @@ A paleta de cores utiliza tons neutros e quentes, como marrom, bege e creme. Ess
 
 Na tipografia, foram utilizadas fontes sofisticadas e elegantes que reforçam o estilo premium da marca. A fonte principal apresenta características clássicas e refinadas, trazendo personalidade ao nome “Café Lumière”, enquanto as fontes secundárias equilibram o design com legibilidade e modernidade.
 
+##
+
 Além disso, a identidade visual foi pensada para funcionar de forma versátil em diferentes aplicações, como:
 - site;
 - redes sociais;
