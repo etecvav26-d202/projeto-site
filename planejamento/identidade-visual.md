@@ -32,7 +32,7 @@ Na tipografia, foram utilizadas fontes sofisticadas e elegantes que reforçam o 
 
 | Fonte Principal | Fonte Intermediária | Fonte do Texto |
 | --- | --- | --- |
-| ![Cinzel Decorative](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_principal) | ![Libre Baskerville](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_intermediaria) | ![Montserrat](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_texto) |
+| ![Cinzel Decorative](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_principal.png) | ![Libre Baskerville](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_intermediaria.png) | ![Montserrat](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_texto.png) |
 
 ## Aplicações
 
