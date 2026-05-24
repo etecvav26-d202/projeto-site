@@ -49,3 +49,5 @@ O site disponibilizará diversos serviços e informações voltados à experiên
 - localização e imagens da cafeteria;
 - horários de funcionamento;
 - redes sociais e formas de contato.
+
+Além disso, o site oferecerá conteúdos voltados ao entretenimento e à cultura literária, fortalecendo a identidade do Café Lumière como uma cafeteria moderna, sofisticada e inspirada no universo dos livros.
