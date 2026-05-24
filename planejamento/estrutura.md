@@ -37,3 +37,7 @@ Aqui serão divulgados eventos culturais da cafeteria, como os clubes de leitura
 
 ## Reservas
 
+Nesta seção o usuário poderá realizar reservas de mesas, escolhendo:
+- data e horário;
+- quantidade de pessoas;
+- possíveis observações.
