@@ -43,3 +43,9 @@ Nesta seção o usuário poderá realizar reservas de mesas, escolhendo:
 - possíveis observações.
 
 ## Carrinho
+
+O carrinho permitirá visualizar todos os itens selecionados (cafés, sobremesas e livros), possibilitando:
+- alterar quantidades;
+- remover itens;
+- revisar pedido antes da finalização.
+
