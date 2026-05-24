@@ -7,3 +7,5 @@ Essa abordagem foi escolhida porque atualmente a maior parte dos usuários acess
 Dessa forma, priorizar a experiência mobile garante mais praticidade, acessibilidade e conforto durante a navegação.
 
 ## Como o site será adaptado para celular
+
+O site será desenvolvido com um layout responsivo, permitindo que todos os elementos se ajustem automaticamente ao tamanho da tela do dispositivo utilizado.
