@@ -1,6 +1,6 @@
 # ☕ Café Lumière
 
-## ![Logo Café Lumière](../logo/logo.png) Café Lumière
+## ![Logo Café Lumière](<img src="caminho-da-imagem.png" width="300">) Café Lumière
 
 <img src="logo/logo.png" width="300">
 
