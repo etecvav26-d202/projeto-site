@@ -28,7 +28,8 @@ A identidade visual foi pensada para funcionar de forma versátil em diferentes 
 - aventais;
 - materiais promocionais.
 
-
+| Produtos | Imagens |
+| --- | --- |
 
 
 O resultado é uma identidade visual moderna, elegante e memorável, capaz de representar o conceito do Café Lumière como uma cafeteria literária sofisticada e acolhedora.
