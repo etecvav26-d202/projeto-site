@@ -25,3 +25,6 @@ O público do Café Lumière possui interesses relacionados à leitura, entreten
 - socialização em ambientes tranquilos.
 
 O público também valoriza praticidade e experiências personalizadas, como a possibilidade de reservar mesas, comprar livros online e alugar livros para leitura durante a permanência na cafeteria.
+
+## Necessidades do público
+
