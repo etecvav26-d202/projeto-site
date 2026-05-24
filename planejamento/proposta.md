@@ -24,3 +24,5 @@ O site também oferecerá uma experiência visual sofisticada, utilizando uma id
 
 ## Problema que o site pretende resolver
 
+O Café Lumière busca resolver a dificuldade que muitos leitores e amantes de cafeterias possuem em encontrar um ambiente que reúna, ao mesmo tempo, lazer, cultura, conforto e praticidade.
+
