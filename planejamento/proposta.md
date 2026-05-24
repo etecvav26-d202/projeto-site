@@ -19,3 +19,5 @@ Entre os principais conteúdos disponíveis estarão:
 - informações sobre eventos culturais e clubes de leitura;
 - área de contato, redes sociais e localização;
 - área de login e cadastro de usuários.
+
+O site também oferecerá uma experiência visual sofisticada, utilizando uma identidade elegante baseada em tons neutros e elementos minimalistas.
