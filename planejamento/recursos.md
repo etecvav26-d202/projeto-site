@@ -22,3 +22,5 @@ Um mapa integrado será usado na página de contato para facilitar a localizaç�
 
 ## Elementos visuais e interativos
 
+O site incluirá gráficos simples ou destaques visuais para mostrar livros mais lidos, avaliações de usuários ou produtos mais pedidos.
+
