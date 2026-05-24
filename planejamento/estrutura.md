@@ -33,3 +33,5 @@ Esta página trará sugestões literárias personalizadas, como:
 
 ## Eventos 
 
+Aqui serão divulgados eventos culturais da cafeteria, como os clubes de leitura, as noites de autógrafos, encontros com autores e eventos temáticos (cada evento terá data, descrição e informações de participação).
+
