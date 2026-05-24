@@ -16,7 +16,7 @@ A logo do Café Lumière possui um design minimalista e marcante, combinando ele
 
 A paleta de cores utiliza tons neutros e quentes, como marrom, bege e creme. Essas cores foram escolhidas para transmitir conforto, elegância e sensação de acolhimento, além de criarem uma estética refinada e agradável visualmente. O marrom representa o café e o aconchego do ambiente, enquanto os tons claros equilibram o visual com suavidade e modernidade.
 
-| Imagem da tonalidade da cor | HEX |
+| Cor | HEX |
 | --- | --- |
 | <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor1.png" width="80"> | #9b6e4d |
 | <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor2.png" width="80"> | #b79677 |
