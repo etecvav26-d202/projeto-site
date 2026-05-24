@@ -40,3 +40,5 @@ Por isso, o site oferece recursos que facilitam a experiência do usuário, como
 - acesso ao cardápio digital;
 - recomendações literárias;
 - participação em eventos e clubes de leitura.
+
+Dessa forma, o Café Lumière proporciona praticidade, conforto e uma experiência diferenciada para pessoas apaixonadas por livros e cafeterias.
