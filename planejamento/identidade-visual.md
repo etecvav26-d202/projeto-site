@@ -16,9 +16,9 @@ A paleta de cores utiliza tons neutros e quentes, como marrom, bege e creme. Ess
 
 Na tipografia, foram utilizadas fontes sofisticadas e elegantes que reforçam o estilo premium da marca. A fonte principal apresenta características clássicas e refinadas, trazendo personalidade ao nome “Café Lumière”, enquanto as fontes secundárias equilibram o design com legibilidade e modernidade.
 
-##
+## Aplicações
 
-Além disso, a identidade visual foi pensada para funcionar de forma versátil em diferentes aplicações, como:
+A identidade visual foi pensada para funcionar de forma versátil em diferentes aplicações, como:
 - site;
 - redes sociais;
 - embalagens;
@@ -27,5 +27,8 @@ Além disso, a identidade visual foi pensada para funcionar de forma versátil e
 - cardápios;
 - aventais;
 - materiais promocionais.
+
+
+
 
 O resultado é uma identidade visual moderna, elegante e memorável, capaz de representar o conceito do Café Lumière como uma cafeteria literária sofisticada e acolhedora.
