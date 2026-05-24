@@ -41,3 +41,5 @@ Nesta seção o usuário poderá realizar reservas de mesas, escolhendo:
 - data e horário;
 - quantidade de pessoas;
 - possíveis observações.
+
+## Carrinho
