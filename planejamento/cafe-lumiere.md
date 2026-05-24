@@ -1,7 +1,7 @@
 # ☕ Café Lumière
 
 <p align="center">
-  <img src="https://github.com/etecvav26-d202/projeto-site/raw/main/logo/logo.png" width="300">
+  <img src="https://github.com/etecvav26-d202/projeto-site/raw/main/logo/logo.png" width="200">
 </p>
 
 ## Café Lumière
