@@ -53,4 +53,4 @@ O resultado é uma identidade visual moderna, elegante e memorável, capaz de re
 
 ## Apresentação da Identidade Visual Formatada
 
-https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/identidade.png
+![Identidade](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/identidade.png)
