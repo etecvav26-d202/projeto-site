@@ -41,16 +41,18 @@ O projeto foi construído com uma estética inspirada em:
 | Elemento | Descrição |
 | --- | --- |
 | Nome da Marca | *Café Lumière* |
-| Logo | (<img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png" width="90">) (<img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo_com_fundo.png" width="90">) |
+| Logo | <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png" width="120"> (<img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo_com_fundo.png" width="120">) |
 | Conceito da Marca | Cafeteria temática inspirada em literatura clássica, arte e cafés artesanais |
 | Estilo Visual | Elegante, acolhedor, vintage e sofisticado |
 | Público-Alvo | Jovens e adultos apreciadores de café, leitura e ambientes tranquilos |
 | Proposta da Marca | Oferecer um espaço aconchegante para leitura, estudo e encontros sociais |
-| Paleta de Cores | <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor1.png" width="45"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor2.png" width="45"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor3.png" width="45"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor4.png" width="45"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor5.png" width="45"> |
+| Paleta de Cores | <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor1.png" width="55"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor2.png" width="55"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor3.png" width="55"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor4.png" width="55"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor5.png" width="55"> |
 | Tipografia | <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_principal.png" width="120"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_intermediaria.png" width="120"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_texto.png" width="120"> |
 | Localização | Av. Macedo Soares, 479 - Capivari, Campos do Jordão - SP, 12460-000 |
 | Aplicação da Marca | Website, redes sociais, embalagens, cardápio e produtos personalizados |
 | Produtos Personalizados | Copos térmicos, sacolas, aventais e embalagens temáticas |
+
+
 A intenção foi transmitir uma sensação de conforto, leitura e requinte.
 
 ## 📱 Responsividade
