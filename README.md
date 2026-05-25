@@ -41,7 +41,7 @@ O projeto foi construído com uma estética inspirada em:
 | Elemento | Descrição |
 | --- | --- |
 | Nome da Marca | *Café Lumière* |
-| Logo | <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png" width="120"> (<img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo_com_fundo.png" width="120">) |
+| Logo | <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png" width="100"> <img src="https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo_com_fundo.png" width="100"> |
 | Conceito da Marca | Cafeteria temática inspirada em literatura clássica, arte e cafés artesanais |
 | Estilo Visual | Elegante, acolhedor, vintage e sofisticado |
 | Público-Alvo | Jovens e adultos apreciadores de café, leitura e ambientes tranquilos |
