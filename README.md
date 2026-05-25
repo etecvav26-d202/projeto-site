@@ -38,7 +38,19 @@ O projeto foi construído com uma estética inspirada em:
 - ⁠Tons neutros e elegantes
 - ⁠Tipografia clássica e moderna combinadas
 
-por a imagem da identidade visual ou criar uma tabela
+| Elemento | Descrição |
+| --- | --- |
+| Nome da Marca	| *Café Lumière* |
+| Logo | ![Logo](https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png) / ![Logo com fundo](https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo_com_fundo.png)|
+| Conceito da Marca	| Cafeteria temática inspirada em literatura clássica, arte e cafés artesanais |
+| Estilo Visual	| Elegante, acolhedor, vintage e sofisticado |
+| Público-Alvo | Jovens e adultos apreciadores de café, leitura e ambientes tranquilos |
+| Proposta da Marca	| Oferecer um espaço aconchegante para leitura, estudo e encontros sociais |
+| Paleta de Cores |	![Cor1](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor1.png) / ![Cor2](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor2.png) / ![Cor3](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor3.png) / ![Cor4](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor4.png) / ![Cor5](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/cor5.png) |
+| Tipografia | ![Fonte Principal](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_principal.png) / ![Fonte Intermediária](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_intermediaria.png) / ![Fonte do Texto](https://github.com/etecvav26-d202/projeto-site/blob/main/imagens/fonte_texto.png) |
+| Localização |	Av. Macedo Soares, 479 - Capivari, Campos do Jordão - SP, 12460-000 |
+| Aplicação da Marca | Website, redes sociais, embalagens, cardápio e produtos personalizados |
+| Produtos Personalizados	| Copos térmicos, sacolas, aventais e embalagens temáticas |
 
 A intenção foi transmitir uma sensação de conforto, leitura e requinte.
 
