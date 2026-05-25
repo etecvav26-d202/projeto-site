@@ -11,7 +11,21 @@ A logo do Café Lumière possui um design minimalista e marcante, combinando ele
 | Logo com fundo transparente | Logo com fundo |
 | --- | --- |
 | ![Logo com fundo transparente](https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo.png) | ![Logo com fundo](https://github.com/etecvav26-d202/projeto-site/blob/main/logo/logo_com_fundo.png)| 
- 
+
+## Dados Fictícios
+
+O Café Lumière foi pensado para proporcionar uma experiência acolhedora e sofisticada, unindo o aroma do café artesanal ao universo da literatura. Algumas informações fictícias desenvolvidas para representar a identidade e o funcionamento da cafeteria dentro do projeto são:
+
+| Informação | Dado Fictício |
+| --- | --- |
+| Telefone | +55 (11) 12345-6789 |
+| Endereço | Av. Macedo Soares, 479 - Capivari, Campos do Jordão - SP, 12460-000 |
+| E-mail | contato@cafelumiere.com |
+| Instagram | @cafelumiere |
+| TikTok | @cafelumiere |
+| Website | www.cafelumiere.com.br |
+| Horário de Funcionamento | Segunda a Sábado, das 08h às 21h - Domingo, das 09h às 14h |
+
 ## Paleta de cores
 
 A paleta de cores utiliza tons neutros e quentes, como marrom, bege e creme. Essas cores foram escolhidas para transmitir conforto, elegância e sensação de acolhimento, além de criarem uma estética refinada e agradável visualmente. O marrom representa o café e o aconchego do ambiente, enquanto os tons claros equilibram o visual com suavidade e modernidade.
