@@ -2,6 +2,8 @@
 
 Um planejamento de *site moderno e responsivo* para uma *cafeteria literária* que une o aconchego do café com o universo dos livros. A expectativa do desenvolvimento do projeto tem foco em um design elegante, uma identidade visual sofisticada e experiência mobile-first.
 
+---
+
 ## ✨ Sobre o projeto
 
 O *Café Lumière* é um planejamento de um projeto fictício que consiste na criação de um site de uma cafeteria temática onde os clientes podem:
@@ -21,12 +23,12 @@ O *Café Lumière* é um planejamento de um projeto fictício que consiste na cr
 
 ## 🧱 Tecnologias utilizadas
 
-HTML
-CSS
-Google Fonts
-Canva
-Visual Studio Code
-GitHub
+- HTML
+- CSS
+- Google Fonts
+- Canva
+- Visual Studio Code
+- GitHub
 
 ## 🎨 Identidade visual
 
@@ -50,6 +52,7 @@ O site tem planeja seguir o conceito Mobile First, garantindo:
 
 ## 📂 Estrutura do projeto
 
+```txt
 projeto-site/
 │
 ├── README.md
@@ -57,6 +60,7 @@ projeto-site/
 ├── referencias/
 ├── imagens/
 └── logo/
+```
 
 ## 💡 Aprendizados
 
