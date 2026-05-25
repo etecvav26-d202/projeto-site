@@ -22,7 +22,7 @@ Um mapa integrado será usado na página de contato para facilitar a localizaç�
 
 O site incluirá gráficos simples ou destaques visuais para mostrar livros mais lidos, avaliações de usuários ou produtos mais pedidos.
 
-# Animações
+## Animações
 
 Animações leves serão aplicadas em botões, transições de página e elementos visuais, deixando o site mais moderno e agradável sem prejudicar a usabilidade.
 
