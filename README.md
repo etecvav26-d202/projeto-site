@@ -19,7 +19,7 @@ O *Café Lumière* é um planejamento de um projeto fictício que consiste na cr
 - ⁠Trabalhar organização de layout e hierarquia visual
 - ⁠Simular um projeto real de marca
 
-# 🧱 Tecnologias utilizadas
+## 🧱 Tecnologias utilizadas
 
 HTML
 CSS
@@ -51,6 +51,7 @@ O site tem planeja seguir o conceito Mobile First, garantindo:
 ## 📂 Estrutura do projeto
 
 projeto-site/
+│
 ├── README.md
 ├── planejamento/
 ├── referencias/
