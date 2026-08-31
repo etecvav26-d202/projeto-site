@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="/projeto-site/css/style.css">
 </head>
 <body>
+<div class="pagina">
     <header class="topo">
-        <div class="logo">☕ Café Lumière</div>
-        <nav>
-            <button class="menu-hamburguer">☰</button>
-            <ul class="menu">
-                <li><a href="/projeto-site/index.php">Home</a></li>
-                <li><a href="/projeto-site/cardapio.php">Cardápio</a></li>
-                <li><a href="/projeto-site/livros.php">Livros</a></li>
-                <li><a href="/projeto-site/eventos.php">Eventos</a></li>
-                <li><a href="/projeto-site/reservas.php">Reservas</a></li>
-                <li><a href="/projeto-site/contato.php">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <span class="logo-icone">☕</span>
+            <span>Café Lumière</span>
+        </div>
+        <button class="menu-hamburguer">☰</button>
+        <ul class="menu">
+            <li><a href="/projeto-site/index.php" class="ativo">Home</a></li>
+            <li><a href="/projeto-site/cardapio.php">Cardápio</a></li>
+            <li><a href="admin/livros.php">Livros</a></li>
+            <li><a href="/projeto-site/contato.php">Contato</a></li>
+        </ul>
         <div class="icones-topo">
-            <a href="/projeto-site/carrinho.php" title="Carrinho">🛒</a>
-            <a href="/projeto-site/login.php" title="Login">👤</a>
+            <a href="#" title="Buscar">🔍</a>
+            <a href="/projeto-site/carrinho.php" title="Carrinho">🛍️</a>
         </div>
     </header>
-    <main>
     <main>
