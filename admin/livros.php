@@ -1,6 +1,6 @@
 <?php
-require 'projeto-site/config/conexao.php';
-include 'projeto-site/includes/header.php';
+require 'config/conexao.php';
+include 'includes/header.php';
 
 
 if (isset($_GET['excluir'])) {
