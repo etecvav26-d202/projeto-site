@@ -16,8 +16,9 @@
         <button class="menu-hamburguer">☰</button>
         <ul class="menu">
             <li><a href="/projeto-site/index.php" class="ativo">Home</a></li>
-            <li><a href="/projeto-site/cardapio.php">Cardápio</a></li>
-            <li><a href="admin/livros.php">Livros</a></li>
+            <li><a href="/projeto-site/admin/cardapio.php">Cardápio</a></li>
+            <li><a href="/projeto-site/admin/livros.php">Livros</a></li>
+            <li><a href="/projeto-site/admin/eventos.php">Eventos</a></li>
             <li><a href="/projeto-site/contato.php">Contato</a></li>
         </ul>
         <div class="icones-topo">
