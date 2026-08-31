@@ -1,5 +1,5 @@
 <?php
-require 'config/conexao.php';
+require 'projeto-site/config/conexao.php';
 
 
 if (isset($_GET['excluir'])) {
