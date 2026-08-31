@@ -174,63 +174,92 @@ table a {
     }
 }
 
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
-    padding: 4rem 2rem;
+    background-color: #e7d8c3;
+    background-image: radial-gradient(#b79677 1px, transparent 1px);
+    background-size: 22px 22px;
+    background-position: -10px -10px;
+    border-radius: 28px;
+    margin: 2rem;
+    padding: 4rem 3rem;
+    box-shadow: 0 20px 45px rgba(64,40,20,0.18);
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-texto {
     flex: 1;
     min-width: 300px;
+    z-index: 2;
+}
+
+.hero-tag {
+    display: inline-block;
+    background-color: #9b6e4d;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
 }
 
 .hero-texto h1 {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 2.5rem;
-    color: #9b6e4d;
+    font-size: 2.7rem;
+    color: #4a3220;
     line-height: 1.3;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .hero-texto p {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.05rem;
-    color: #404040;
-    margin-bottom: 1.5rem;
+    color: #5a5a5a;
+    max-width: 480px;
+    margin-bottom: 2rem;
 }
 
 .hero-botoes {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     flex-wrap: wrap;
 }
 
 .btn-primario, .btn-secundario {
-    padding: 0.8rem 1.8rem;
-    border-radius: 30px;
+    padding: 0.9rem 2rem;
+    border-radius: 40px;
     text-decoration: none;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    transition: 0.2s;
+    transition: 0.25s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btn-primario {
     background-color: #9b6e4d;
     color: #fff;
+    box-shadow: 0 8px 20px rgba(155,110,77,0.4);
 }
 
 .btn-primario:hover {
     background-color: #7d5a3d;
+    transform: translateY(-2px);
 }
 
 .btn-secundario {
     border: 2px solid #9b6e4d;
     color: #9b6e4d;
+    background-color: transparent;
 }
 
 .btn-secundario:hover {
@@ -240,33 +269,94 @@ table a {
 
 .hero-stats {
     display: flex;
-    gap: 2.5rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
 .hero-stats .stat strong {
     display: block;
-    font-size: 1.8rem;
-    color: #9b6e4d;
+    font-size: 2.2rem;
+    color: #4a3220;
     font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
 }
 
 .hero-stats .stat span {
-    font-size: 0.85rem;
-    color: #404040;
+    font-size: 0.8rem;
+    color: #6b6b6b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .hero-imagem {
     flex: 1;
-    min-width: 280px;
+    min-width: 300px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-imagem img {
     width: 100%;
-    max-width: 450px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    max-width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+}
+
+.badge-flutuante {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.badge-1 { top: -10px; left: 20px; }
+.badge-2 { bottom: 40px; right: 0; animation-delay: 1.5s; }
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.hero-selo {
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    background-color: #fff;
+    padding: 0.8rem 1.3rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.hero-selo strong {
+    display: block;
+    font-size: 0.9rem;
+    color: #4a3220;
+}
+
+.hero-selo span {
+    font-size: 0.8rem;
+    color: #9b6e4d;
+    font-weight: 700;
+}
+
+
+.icones-topo {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.icones-topo a {
+    text-decoration: none;
 }
 
 
@@ -274,9 +364,15 @@ table a {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 2rem 1.5rem;
+        padding: 3rem 1.5rem;
+        margin: 1rem;
     }
     .hero-botoes, .hero-stats {
         justify-content: center;
+    }
+    .hero-selo {
+        position: static;
+        display: inline-block;
+        margin-top: 1.5rem;
     }
 }

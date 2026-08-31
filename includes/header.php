@@ -14,13 +14,16 @@
             <ul class="menu">
                 <li><a href="/projeto-site/index.php">Home</a></li>
                 <li><a href="/projeto-site/cardapio.php">Cardápio</a></li>
-                <li><a href="admin/livros.php">Livros</a></li>
+                <li><a href="/projeto-site/livros.php">Livros</a></li>
                 <li><a href="/projeto-site/eventos.php">Eventos</a></li>
                 <li><a href="/projeto-site/reservas.php">Reservas</a></li>
-                <li><a href="/projeto-site/carrinho.php">Carrinho</a></li>
                 <li><a href="/projeto-site/contato.php">Contato</a></li>
-                <li><a href="/projeto-site/login.php">Login</a></li>
             </ul>
         </nav>
+        <div class="icones-topo">
+            <a href="/projeto-site/carrinho.php" title="Carrinho">🛒</a>
+            <a href="/projeto-site/login.php" title="Login">👤</a>
+        </div>
     </header>
+    <main>
     <main>
