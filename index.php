@@ -22,6 +22,6 @@ include 'includes/header.php';
             </div>
         <?php endforeach; ?>
     </div>
-    <?php include 'projeto-site/includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>
 </body>
 </html>
