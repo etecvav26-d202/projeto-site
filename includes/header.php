@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/projeto-site/css/style.css">
 </head>
 <body>
-<div class="pagina">
     <header class="topo">
         <div class="logo">
             <span class="logo-icone">☕</span>
