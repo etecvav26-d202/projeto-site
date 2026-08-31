@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Libre+Baskerville:ital@0;1&family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e3e0d1;
+    color: #404040;
+    line-height: 1.6;
+}
+
+.topo {
+    background-color: #9b6e4d;
+    color: #e7d8c3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.5rem;
+    color: #e7d8c3;
+}
+
+.menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #e7d8c3;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu li a {
+    color: #e7d8c3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.menu li a:hover {
+    color: #ffffff;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: #9b6e4d;
+    margin-bottom: 1rem;
+}
+
+
+.livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.livro-card {
+    background-color: #ffffff;
+    border: 1px solid #b79677;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.livro-card h3 {
+    font-size: 1.1rem;
+    color: #404040;
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #b79677;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 0.6rem;
+    border: 1px solid #b79677;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    flex: 1;
+    min-width: 150px;
+}
+
+form button {
+    background-color: #9b6e4d;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+form button:hover {
+    background-color: #7d5a3d;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+table th, table td {
+    padding: 0.8rem;
+    border: 1px solid #e7d8c3;
+    text-align: left;
+}
+
+table th {
+    background-color: #e7d8c3;
+    color: #404040;
+}
+
+table a {
+    color: #9b6e4d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.rodape {
+    background-color: #9b6e4d;
+    color: #e7d8c3;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .menu.aberto {
+        display: flex;
+    }
+}

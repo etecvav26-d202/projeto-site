@@ -1,5 +1,5 @@
 <?php
-require 'projeto-site/config/conexao.php';
+require '../config/conexao.php';
 
 
 if (isset($_GET['excluir'])) {
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $livros = $pdo->query("SELECT * FROM livros ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
 
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 <h1>Gerenciar Livros</h1>
@@ -78,4 +78,4 @@ include 'includes/header.php';
     <?php endforeach; ?>
 </table>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
