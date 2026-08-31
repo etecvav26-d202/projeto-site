@@ -1,7 +1,7 @@
 <?php
-require 'projeto-site/config/conexao.php';
+require 'config/conexao.php';
 $livros = $pdo->query("SELECT * FROM livros ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
-include 'projeto-site/includes/header.php';
+include 'includes/header.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
