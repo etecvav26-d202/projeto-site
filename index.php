@@ -1,7 +1,7 @@
 <?php
-require 'config/conexao.php';
+require 'projeto-site/config/conexao.php';
 $livros = $pdo->query("SELECT * FROM livros ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
-include 'includes/header.php';
+include 'projeto-site/includes/header.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,6 +22,6 @@ include 'includes/header.php';
             </div>
         <?php endforeach; ?>
     </div>
-    <?php include 'includes/footer.php'; ?>
+    <?php include 'projeto-site/includes/footer.php'; ?>
 </body>
 </html>
