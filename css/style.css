@@ -55,7 +55,6 @@ body {
     color: #ffffff;
 }
 
-
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -67,7 +66,6 @@ h1, h2, h3 {
     color: #9b6e4d;
     margin-bottom: 1rem;
 }
-
 
 .livros {
     display: grid;
@@ -87,7 +85,6 @@ h1, h2, h3 {
     font-size: 1.1rem;
     color: #404040;
 }
-
 
 form {
     display: flex;
@@ -125,7 +122,6 @@ form button:hover {
     background-color: #7d5a3d;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -149,7 +145,6 @@ table a {
     font-weight: 500;
 }
 
-
 .rodape {
     background-color: #9b6e4d;
     color: #e7d8c3;
@@ -157,7 +152,6 @@ table a {
     padding: 1.5rem;
     margin-top: 3rem;
 }
-
 
 @media (max-width: 768px) {
     .menu-hamburguer {
@@ -174,20 +168,22 @@ table a {
     }
 }
 
-
+/* ===== Hero: fundo escuro com foto real de grãos de café ===== */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
-    background-color: #e7d8c3;
-    background-image: radial-gradient(#b79677 1px, transparent 1px);
-    background-size: 22px 22px;
-    background-position: -10px -10px;
+    background-color: #1f140d;
+    background-image:
+        linear-gradient(to right, rgba(31,20,13,0.75), rgba(31,20,13,0.4)),
+        url('/projeto-site/images/hero-fundo.jpg');
+    background-size: cover;
+    background-position: center;
     border-radius: 28px;
     margin: 2rem;
     padding: 4rem 3rem;
-    box-shadow: 0 20px 45px rgba(64,40,20,0.18);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.4);
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
@@ -213,7 +209,7 @@ table a {
 .hero-texto h1 {
     font-family: 'Cinzel Decorative', serif;
     font-size: 2.7rem;
-    color: #4a3220;
+    color: #e7d8c3;
     line-height: 1.3;
     margin-bottom: 1.2rem;
 }
@@ -221,7 +217,7 @@ table a {
 .hero-texto p {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.05rem;
-    color: #5a5a5a;
+    color: #cbbfae;
     max-width: 480px;
     margin-bottom: 2rem;
 }
@@ -248,7 +244,7 @@ table a {
 .btn-primario {
     background-color: #9b6e4d;
     color: #fff;
-    box-shadow: 0 8px 20px rgba(155,110,77,0.4);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .btn-primario:hover {
@@ -257,14 +253,14 @@ table a {
 }
 
 .btn-secundario {
-    border: 2px solid #9b6e4d;
-    color: #9b6e4d;
+    border: 2px solid #e7d8c3;
+    color: #e7d8c3;
     background-color: transparent;
 }
 
 .btn-secundario:hover {
-    background-color: #9b6e4d;
-    color: #fff;
+    background-color: #e7d8c3;
+    color: #1f140d;
 }
 
 .hero-stats {
@@ -276,14 +272,14 @@ table a {
 .hero-stats .stat strong {
     display: block;
     font-size: 2.2rem;
-    color: #4a3220;
+    color: #e7d8c3;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
 }
 
 .hero-stats .stat span {
     font-size: 0.8rem;
-    color: #6b6b6b;
+    color: #b79677;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -300,7 +296,7 @@ table a {
     width: 100%;
     max-width: 420px;
     border-radius: 20px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
 }
 
 .badge-flutuante {
@@ -313,7 +309,7 @@ table a {
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     animation: flutuar 3s ease-in-out infinite;
 }
 
@@ -329,17 +325,17 @@ table a {
     position: absolute;
     bottom: -15px;
     left: 20px;
-    background-color: #fff;
+    background-color: #e7d8c3;
     padding: 0.8rem 1.3rem;
     border-radius: 14px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     text-align: left;
 }
 
 .hero-selo strong {
     display: block;
     font-size: 0.9rem;
-    color: #4a3220;
+    color: #1f140d;
 }
 
 .hero-selo span {
@@ -347,7 +343,6 @@ table a {
     color: #9b6e4d;
     font-weight: 700;
 }
-
 
 .icones-topo {
     display: flex;
@@ -358,7 +353,6 @@ table a {
 .icones-topo a {
     text-decoration: none;
 }
-
 
 @media (max-width: 768px) {
     .hero {
