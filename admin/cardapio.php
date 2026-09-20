@@ -1,76 +1,180 @@
 <?php
-require '../config/conexao.php';
 
+require_once 'config/conexao.php';
 
-if (isset($_GET['excluir'])) {
-    $stmt = $pdo->prepare("DELETE FROM cardapio WHERE id = ?");
-    $stmt->execute([$_GET['excluir']]);
-    header("Location: cardapio.php");
-    exit;
+$tituloPagina = 'Cardápio';
+
+require 'includes/header.php';
+
+$categoria = $_GET['categoria'] ?? 'todos';
+
+$sql = "
+    SELECT *
+    FROM produtos
+    WHERE ativo = 1
+";
+
+$params = [];
+
+if ($categoria !== 'todos') {
+
+    $sql .= " AND categoria = ?";
+
+    $params[] = $categoria;
 }
 
-$editando = null;
-if (isset($_GET['editar'])) {
-    $stmt = $pdo->prepare("SELECT * FROM cardapio WHERE id = ?");
-    $stmt->execute([$_GET['editar']]);
-    $editando = $stmt->fetch(PDO::FETCH_ASSOC);
-}
+$sql .= " ORDER BY categoria, nome";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nome      = $_POST['nome'];
-    $categoria = $_POST['categoria'];
-    $descricao = $_POST['descricao'];
-    $preco     = $_POST['preco'];
+$stmt = $pdo->prepare($sql);
 
-    if (!empty($_POST['id'])) {
-        $stmt = $pdo->prepare("UPDATE cardapio SET nome=?, categoria=?, descricao=?, preco=? WHERE id=?");
-        $stmt->execute([$nome, $categoria, $descricao, $preco, $_POST['id']]);
-    } else {
-        $stmt = $pdo->prepare("INSERT INTO cardapio (nome, categoria, descricao, preco) VALUES (?, ?, ?, ?)");
-        $stmt->execute([$nome, $categoria, $descricao, $preco]);
-    }
-    header("Location: cardapio.php");
-    exit;
-}
+$stmt->execute($params);
 
-$itens = $pdo->query("SELECT * FROM cardapio ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
+$produtos = $stmt->fetchAll();
 
-include '../includes/header.php';
 ?>
 
-<h1>Gerenciar Cardápio</h1>
+<section class="page-hero">
 
-<form method="POST">
-    <input type="hidden" name="id" value="<?= $editando['id'] ?? '' ?>">
-    <input type="text" name="nome" placeholder="Nome do item" value="<?= $editando['nome'] ?? '' ?>" required>
-    <select name="categoria">
-        <option value="cafe" <?= (($editando['categoria'] ?? '') == 'cafe') ? 'selected' : '' ?>>Café</option>
-        <option value="bebida" <?= (($editando['categoria'] ?? '') == 'bebida') ? 'selected' : '' ?>>Bebida</option>
-        <option value="sobremesa" <?= (($editando['categoria'] ?? '') == 'sobremesa') ? 'selected' : '' ?>>Sobremesa</option>
-        <option value="combo" <?= (($editando['categoria'] ?? '') == 'combo') ? 'selected' : '' ?>>Combo</option>
-    </select>
-    <textarea name="descricao" placeholder="Descrição"><?= $editando['descricao'] ?? '' ?></textarea>
-    <input type="number" step="0.01" name="preco" placeholder="Preço" value="<?= $editando['preco'] ?? '' ?>" required>
-    <button type="submit"><?= $editando ? 'Atualizar' : 'Cadastrar' ?></button>
-</form>
+    <div class="container fade-up">
 
-<hr>
+        <span class="eyebrow">
+            Sabores Lumière
+        </span>
 
-<table border="1">
-    <tr>
-        <th>Nome</th><th>Categoria</th><th>Preço</th><th>Ações</th>
-    </tr>
-    <?php foreach ($itens as $item): ?>
-    <tr>
-        <td><?= htmlspecialchars($item['nome']) ?></td>
-        <td><?= $item['categoria'] ?></td>
-        <td>R$ <?= number_format($item['preco'], 2, ',', '.') ?></td>
-        <td>
-            <a href="cardapio.php?editar=<?= $item['id'] ?>">Editar</a> |
-            <a href="cardapio.php?excluir=<?= $item['id'] ?>" onclick="return confirm('Excluir este item?')">Excluir</a>
-        </td>
-    </tr>
-    <?php endforeach; ?>
-</table>
+        <h1>
+            Cardápio
+        </h1>
 
-<?php include '../includes/footer.php'; ?>
+        <p>
+            Cafés especiais, bebidas e sobremesas
+            para acompanhar suas melhores histórias.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div
+            class="hero-actions"
+            style="justify-content:center;margin-bottom:45px"
+        >
+
+            <a
+                class="btn <?= $categoria === 'todos' ? 'btn-primary' : 'btn-light' ?>"
+                href="cardapio.php"
+            >
+                Todos
+            </a>
+
+            <a
+                class="btn <?= $categoria === 'cafe' ? 'btn-primary' : 'btn-light' ?>"
+                href="?categoria=cafe"
+            >
+                Cafés
+            </a>
+
+            <a
+                class="btn <?= $categoria === 'bebida' ? 'btn-primary' : 'btn-light' ?>"
+                href="?categoria=bebida"
+            >
+                Bebidas
+            </a>
+
+            <a
+                class="btn <?= $categoria === 'sobremesa' ? 'btn-primary' : 'btn-light' ?>"
+                href="?categoria=sobremesa"
+            >
+                Sobremesas
+            </a>
+
+            <a
+                class="btn <?= $categoria === 'combo' ? 'btn-primary' : 'btn-light' ?>"
+                href="?categoria=combo"
+            >
+                Combos
+            </a>
+
+        </div>
+
+
+        <div class="product-grid">
+
+            <?php foreach ($produtos as $produto): ?>
+
+                <article class="product-card reveal">
+
+                    <div class="product-image">
+
+                        <div class="image-placeholder">
+                            COLOQUE A IMAGEM AQUI
+                        </div>
+
+                        <img
+                            src="<?= htmlspecialchars($produto['imagem']) ?>"
+                            alt="<?= htmlspecialchars($produto['nome']) ?>"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <small style="
+                            color:var(--brown);
+                            text-transform:uppercase;
+                            letter-spacing:.1em
+                        ">
+
+                            <?= htmlspecialchars($produto['categoria']) ?>
+
+                        </small>
+
+                        <h3>
+                            <?= htmlspecialchars($produto['nome']) ?>
+                        </h3>
+
+                        <p>
+                            <?= htmlspecialchars($produto['descricao']) ?>
+                        </p>
+
+                        <div class="product-footer">
+
+                            <span class="price">
+
+                                R$
+                                <?= number_format(
+                                    $produto['preco'],
+                                    2,
+                                    ',',
+                                    '.'
+                                ) ?>
+
+                            </span>
+
+                            <a
+                                class="btn btn-primary"
+                                href="adicionar_carrinho.php?tipo=produto&id=<?= $produto['id'] ?>"
+                            >
+                                Adicionar
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            <?php endforeach; ?>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<?php require 'includes/footer.php'; ?>
