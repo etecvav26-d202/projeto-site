@@ -38,6 +38,7 @@ if (!empty($_SESSION['carrinho'])) {
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<<<<<<< HEAD
 <header class="site-header">
     <div class="container nav-wrap">
         <a href="index.php" class="brand">
@@ -81,6 +82,12 @@ if (!empty($_SESSION['carrinho'])) {
                     <?= $carrinhoQtd ?>
                 </span>
             </a>
+=======
+    <header class="topo">
+        <div class="logo">
+            <span class="logo-icone">☕</span>
+            <span>Café Lumière</span>
+>>>>>>> 317c8e749d52e23eb8e08d1324a59bfd9a25d187
         </div>
     </div>
 </header>
