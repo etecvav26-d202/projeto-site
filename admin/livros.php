@@ -1,81 +1,120 @@
 <?php
-require '../config/conexao.php';
 
+require_once 'config/conexao.php';
 
-if (isset($_GET['excluir'])) {
-    $stmt = $pdo->prepare("DELETE FROM livros WHERE id = ?");
-    $stmt->execute([$_GET['excluir']]);
-    header("Location: livros.php");
-    exit;
-}
+$tituloPagina = 'Livros';
 
-$editando = null;
-if (isset($_GET['editar'])) {
-    $stmt = $pdo->prepare("SELECT * FROM livros WHERE id = ?");
-    $stmt->execute([$_GET['editar']]);
-    $editando = $stmt->fetch(PDO::FETCH_ASSOC);
-}
+require 'includes/header.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $titulo  = $_POST['titulo'];
-    $autor   = $_POST['autor'];
-    $genero  = $_POST['genero'];
-    $sinopse = $_POST['sinopse'];
-    $preco   = $_POST['preco'];
-    $tipo    = $_POST['tipo'];
+$livros = $pdo->query("
+    SELECT *
+    FROM livros
+    WHERE ativo = 1
+    ORDER BY destaque DESC, id DESC
+")->fetchAll();
 
-    if (!empty($_POST['id'])) {
-        $stmt = $pdo->prepare("UPDATE livros SET titulo=?, autor=?, genero=?, sinopse=?, preco=?, tipo=? WHERE id=?");
-        $stmt->execute([$titulo, $autor, $genero, $sinopse, $preco, $tipo, $_POST['id']]);
-    } else {
-        $stmt = $pdo->prepare("INSERT INTO livros (titulo, autor, genero, sinopse, preco, tipo) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->execute([$titulo, $autor, $genero, $sinopse, $preco, $tipo]);
-    }
-    header("Location: livros.php");
-    exit;
-}
-
-$livros = $pdo->query("SELECT * FROM livros ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
-
-include '../includes/header.php';
 ?>
 
-<h1>Gerenciar Livros</h1>
+<section class="page-hero">
 
-<form method="POST">
-    <input type="hidden" name="id" value="<?= $editando['id'] ?? '' ?>">
-    <input type="text" name="titulo" placeholder="Título" value="<?= $editando['titulo'] ?? '' ?>" required>
-    <input type="text" name="autor" placeholder="Autor" value="<?= $editando['autor'] ?? '' ?>" required>
-    <input type="text" name="genero" placeholder="Gênero" value="<?= $editando['genero'] ?? '' ?>">
-    <textarea name="sinopse" placeholder="Sinopse"><?= $editando['sinopse'] ?? '' ?></textarea>
-    <input type="number" step="0.01" name="preco" placeholder="Preço" value="<?= $editando['preco'] ?? '' ?>" required>
-    <select name="tipo">
-        <option value="compra" <?= (($editando['tipo'] ?? '') == 'compra') ? 'selected' : '' ?>>Compra</option>
-        <option value="aluguel" <?= (($editando['tipo'] ?? '') == 'aluguel') ? 'selected' : '' ?>>Aluguel</option>
-        <option value="ambos" <?= (($editando['tipo'] ?? '') == 'ambos') ? 'selected' : '' ?>>Ambos</option>
-    </select>
-    <button type="submit"><?= $editando ? 'Atualizar' : 'Cadastrar' ?></button>
-</form>
+    <div class="container fade-up">
 
-<hr>
+        <span class="eyebrow">
+            Estante Lumière
+        </span>
 
-<table border="1">
-    <tr>
-        <th>Título</th><th>Autor</th><th>Gênero</th><th>Preço</th><th>Tipo</th><th>Ações</th>
-    </tr>
-    <?php foreach ($livros as $livro): ?>
-    <tr>
-        <td><?= htmlspecialchars($livro['titulo']) ?></td>
-        <td><?= htmlspecialchars($livro['autor']) ?></td>
-        <td><?= htmlspecialchars($livro['genero']) ?></td>
-        <td>R$ <?= number_format($livro['preco'], 2, ',', '.') ?></td>
-        <td><?= $livro['tipo'] ?></td>
-        <td>
-            <a href="livros.php?editar=<?= $livro['id'] ?>">Editar</a> |
-            <a href="livros.php?excluir=<?= $livro['id'] ?>" onclick="return confirm('Excluir este livro?')">Excluir</a>
-        </td>
-    </tr>
-    <?php endforeach; ?>
-</table>
+        <h1>
+            Livros
+        </h1>
 
-<?php include '../includes/footer.php'; ?>
+        <p>
+            Escolha uma história para levar para casa
+            ou simplesmente descubra algo novo enquanto
+            toma seu café.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="book-grid">
+
+            <?php foreach ($livros as $livro): ?>
+
+                <article class="card reveal">
+
+                    <div class="book-cover">
+
+                        <div class="image-placeholder">
+                            COLOQUE A CAPA AQUI
+                        </div>
+
+                        <img
+                            src="<?= htmlspecialchars($livro['imagem']) ?>"
+                            alt="Capa de <?= htmlspecialchars($livro['titulo']) ?>"
+                        >
+
+                    </div>
+
+                    <div class="book-body">
+
+                        <h3>
+                            <?= htmlspecialchars($livro['titulo']) ?>
+                        </h3>
+
+                        <div class="book-meta">
+
+                            <?= htmlspecialchars($livro['autor']) ?>
+
+                            ·
+
+                            <?= htmlspecialchars($livro['genero']) ?>
+
+                        </div>
+
+                        <p>
+                            <?= htmlspecialchars($livro['sinopse']) ?>
+                        </p>
+
+                        <div class="product-footer">
+
+                            <strong class="price">
+
+                                R$
+                                <?= number_format(
+                                    $livro['preco'],
+                                    2,
+                                    ',',
+                                    '.'
+                                ) ?>
+
+                            </strong>
+
+                            <a
+                                class="btn btn-primary"
+                                href="adicionar_carrinho.php?tipo=livro&id=<?= $livro['id'] ?>"
+                            >
+                                Adicionar
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            <?php endforeach; ?>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<?php require 'includes/footer.php'; ?>
