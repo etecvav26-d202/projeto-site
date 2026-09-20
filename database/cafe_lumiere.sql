@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/09/2026 às 00:09
+-- Tempo de geração: 21/09/2026 às 01:06
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -52,6 +52,7 @@ CREATE TABLE `livros` (
   `preco` decimal(10,2) NOT NULL DEFAULT 0.00,
   `tipo` enum('compra','aluguel') DEFAULT 'compra',
   `imagem` varchar(255) DEFAULT NULL,
+  `destaque` tinyint(1) DEFAULT 0,
   `ativo` tinyint(1) DEFAULT 1,
   `criado_em` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -60,10 +61,10 @@ CREATE TABLE `livros` (
 -- Despejando dados para a tabela `livros`
 --
 
-INSERT INTO `livros` (`id`, `titulo`, `autor`, `genero`, `sinopse`, `preco`, `tipo`, `imagem`, `ativo`, `criado_em`) VALUES
-(1, 'O Pequeno Príncipe', 'Antoine de Saint-Exupéry', 'Literatura', 'Uma história sobre amizade, afeto e diferentes formas de enxergar o mundo.', 39.90, 'compra', NULL, 1, '2026-09-20 21:27:37'),
-(2, 'Dom Casmurro', 'Machado de Assis', 'Romance', 'Clássico da literatura brasileira narrado por Bentinho.', 34.90, 'compra', NULL, 1, '2026-09-20 21:27:37'),
-(3, 'Orgulho e Preconceito', 'Jane Austen', 'Romance', 'Um clássico que acompanha Elizabeth Bennet e suas relações.', 42.90, 'compra', NULL, 1, '2026-09-20 21:27:37');
+INSERT INTO `livros` (`id`, `titulo`, `autor`, `genero`, `sinopse`, `preco`, `tipo`, `imagem`, `destaque`, `ativo`, `criado_em`) VALUES
+(1, 'O Pequeno Príncipe', 'Antoine de Saint-Exupéry', 'Literatura', 'Uma história sobre amizade, afeto e diferentes formas de enxergar o mundo.', 39.90, 'compra', NULL, 0, 1, '2026-09-20 21:27:37'),
+(2, 'Dom Casmurro', 'Machado de Assis', 'Romance', 'Clássico da literatura brasileira narrado por Bentinho.', 34.90, 'compra', NULL, 0, 1, '2026-09-20 21:27:37'),
+(3, 'Orgulho e Preconceito', 'Jane Austen', 'Romance', 'Um clássico que acompanha Elizabeth Bennet e suas relações.', 42.90, 'compra', NULL, 0, 1, '2026-09-20 21:27:37');
 
 -- --------------------------------------------------------
 
