@@ -37,7 +37,7 @@ if (!isset($tituloPagina)) {
 
     <link
         rel="stylesheet"
-        href="assets/css/style.css"
+        href="css/style.css"
     >
 
 </head>
