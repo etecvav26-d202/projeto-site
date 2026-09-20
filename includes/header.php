@@ -5,6 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 $carrinhoQtd = 0;
+
 if (!empty($_SESSION['carrinho'])) {
     foreach ($_SESSION['carrinho'] as $item) {
         $carrinhoQtd += (int)$item['quantidade'];
@@ -26,11 +27,12 @@ if (!empty($_SESSION['carrinho'])) {
         name="description"
         content="Café Lumière — cafeteria literária que une cafés especiais, livros e experiências culturais."
     >
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
           crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
         rel="stylesheet"
@@ -38,7 +40,6 @@ if (!empty($_SESSION['carrinho'])) {
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<<<<<<< HEAD
 <header class="site-header">
     <div class="container nav-wrap">
         <a href="index.php" class="brand">
@@ -48,6 +49,7 @@ if (!empty($_SESSION['carrinho'])) {
                 <small>CAFETERIA LITERÁRIA</small>
             </span>
         </a>
+
         <button
             class="menu-toggle"
             id="menuToggle"
@@ -65,6 +67,7 @@ if (!empty($_SESSION['carrinho'])) {
             <a href="reservas.php">Reservas</a>
             <a href="contato.php">Contato</a>
         </nav>
+
         <div class="nav-actions">
             <a href="login.php" class="login-link">
                 <?= !empty($_SESSION['usuario'])
@@ -72,6 +75,7 @@ if (!empty($_SESSION['carrinho'])) {
                     : 'Login'
                 ?>
             </a>
+
             <a
                 href="carrinho.php"
                 class="cart-link"
@@ -82,12 +86,6 @@ if (!empty($_SESSION['carrinho'])) {
                     <?= $carrinhoQtd ?>
                 </span>
             </a>
-=======
-    <header class="topo">
-        <div class="logo">
-            <span class="logo-icone">☕</span>
-            <span>Café Lumière</span>
->>>>>>> 317c8e749d52e23eb8e08d1324a59bfd9a25d187
         </div>
     </div>
 </header>
