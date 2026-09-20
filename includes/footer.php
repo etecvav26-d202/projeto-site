@@ -2,55 +2,110 @@
 
 <footer class="site-footer">
     <div class="container footer-grid">
-        <div>
-            <a href="index.php" class="footer-brand">
-                CAFÉ LUMIÈRE
+        <div class="footer-brand">
+            <a
+                href="index.php"
+                class="logo footer-logo"
+            >
+
+                <span class="logo-symbol">
+                    L
+                </span>
+
+                <span class="logo-text">
+                    Café Lumière
+                </span>
             </a>
+
             <p>
-                Um espaço onde bons cafés encontram boas histórias.
+                Um encontro entre café, livros e momentos
+                que merecem ser apreciados com calma.
             </p>
+
         </div>
 
-        <div>
-            <h4>Navegação</h4>
-            <a href="cardapio.php">Cardápio</a>
-            <a href="livros.php">Livros</a>
-            <a href="eventos.php">Eventos</a>
-            <a href="reservas.php">Reservas</a>
+        <div class="footer-column">
+
+            <h3>
+                Navegação
+            </h3>
+
+            <a href="index.php">
+                Início
+            </a>
+
+            <a href="cardapio.php">
+                Cardápio
+            </a>
+
+            <a href="livros.php">
+                Livros
+            </a>
+
+            <a href="eventos.php">
+                Eventos
+            </a>
+
+            <a href="reservas.php">
+                Reservas
+            </a>
         </div>
 
-        <div>
+        <div class="footer-column">
 
-            <h4>Contato</h4>
-            <p>Rua das Letras, 120 — Centro</p>
-            <p>Jundiaí — SP</p>
-            <p>contato@cafelumiere.com.br</p>
+            <h3>
+                Café Lumière
+            </h3>
+
+            <p>
+                Rua das Letras, 123
+            </p>
+
+            <p>
+                Jundiaí — SP
+            </p>
+
+            <p>
+                Segunda a sábado
+            </p>
+
+            <p>
+                09h às 21h
+            </p>
+
         </div>
 
-        <div>
-            <h4>Redes</h4>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
-            <a href="#">WhatsApp</a>
-        </div>
+        <div class="footer-column">
+            <h3>
+                Siga-nos
+            </h3>
 
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                TikTok
+            </a>
+        </div>
     </div>
+
 
     <div class="footer-bottom">
         <div class="container">
-            <span>
+            <p>
                 © <?= date('Y') ?> Café Lumière.
-                Projeto acadêmico.
-            </span>
-
-            <span>
-                Feito com café & literatura ☕
-            </span>
+                Todos os direitos reservados.
+            </p>
         </div>
     </div>
 </footer>
 
-<script src="assets/js/app.js"></script>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>
