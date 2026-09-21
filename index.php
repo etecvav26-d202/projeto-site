@@ -69,15 +69,9 @@ $eventos = $pdo->query("
 
         <div class="hero-image float">
             <img
-                src="assets/img/hero-cafe.jpg"
-                alt="Ambiente do Café Lumière"
-            >
-            <div class="image-placeholder">
-                            <img
-                src="imagens/cafe_lumiere_ambiente.jpg"
+                src="imagens/cafe_lumiere_ambiente_recanto.jpg"
                 alt="Ambiente do Café Lumière"
                 >
-            </div>
         </div>
     </div>
 </section>
@@ -108,11 +102,8 @@ $eventos = $pdo->query("
             <article class="card reveal">
                 <div class="card-image">
                     <div class="image-placeholder">
-                        FOTO DO AMBIENTE
-                    </div>
-
-                    <img
-                        src="assets/img/ambiente.jpg"
+                        <img
+                        src="imagens/cafe_lumiere_ambiente.jpg"
                         alt="Ambiente da cafeteria"
                     >
 
