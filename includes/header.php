@@ -47,10 +47,14 @@ if (session_status() === PHP_SESSION_NONE) {
 <header class="site-header">
     <div class="container nav-container">
         <a href="index.php" class="logo">
-            <span class="logo-symbol">L</span>
-            <span class="logo-text">
-                Café Lumière
+            <span class="logo-symbol">
+                <img src="logo/logo.png" alt="Café Lumière">
             </span>
+            
+            <span class="logo-text">Café Lumière
+                
+            </span>
+        </a>
 
         </a>
 
