@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/09/2026 às 05:17
+-- Tempo de geração: 21/09/2026 às 14:08
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -47,11 +47,11 @@ CREATE TABLE `eventos` (
 --
 
 INSERT INTO `eventos` (`id`, `titulo`, `descricao`, `data_evento`, `horario`, `local_evento`, `vagas`, `preco`, `imagem`, `destaque`, `ativo`, `criado_em`) VALUES
-(1, 'Clube do Livro: Realismo Brasileiro', 'Um encontro para conversar sobre grandes obras do Realismo brasileiro e compartilhar diferentes interpretações.', '2026-10-10', '15:00:00', 'Salão Literário', 25, 0.00, 'assets/img/evento-realismo.jpg', 1, 1, '2026-09-20 23:47:33'),
-(2, 'Café & Poesia', 'Uma tarde especial com café, leitura de poemas e espaço para conversar sobre literatura.', '2026-10-17', '16:00:00', 'Salão Principal', 30, 15.00, 'assets/img/cafe-poesia.jpg', 1, 1, '2026-09-20 23:47:33'),
-(3, 'Noite de Autores Brasileiros', 'Encontro dedicado à literatura brasileira, com leituras e apresentação de autores importantes.', '2026-10-24', '19:00:00', 'Espaço Lumière', 40, 20.00, 'assets/img/autores-brasileiros.jpg', 0, 1, '2026-09-20 23:47:33'),
-(4, 'Oficina de Escrita Criativa', 'Uma oficina para desenvolver ideias, personagens e pequenas histórias.', '2026-11-07', '14:00:00', 'Sala de Leitura', 20, 25.00, 'assets/img/escrita-criativa.jpg', 0, 1, '2026-09-20 23:47:33'),
-(5, 'Sarau Lumière', 'Uma noite de literatura, música e apresentações em um ambiente inspirado nos cafés literários.', '2026-11-14', '19:30:00', 'Salão Principal', 50, 10.00, 'assets/img/sarau.jpg', 1, 1, '2026-09-20 23:47:33');
+(1, 'Clube do Livro: Realismo Brasileiro', 'Um encontro para conversar sobre grandes obras do Realismo brasileiro e compartilhar diferentes interpretações.', '2026-10-10', '15:00:00', 'Salão Literário', 25, 0.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTelmP3TnXF4G85BO4CeWTaHH7tO96OEXUzASIOBZgjHQ&s=10', 1, 1, '2026-09-20 23:47:33'),
+(2, 'Café & Poesia', 'Uma tarde especial com café, leitura de poemas e espaço para conversar sobre literatura.', '2026-10-17', '16:00:00', 'Salão Principal', 30, 15.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuGriX0umYPm5qLjjtt9Zy6KzMAjtck7JMWEkPBwV9Xy3qlm2kIhvNaa-g&s=10', 1, 1, '2026-09-20 23:47:33'),
+(3, 'Noite de Autores Brasileiros', 'Encontro dedicado à literatura brasileira, com leituras e apresentação de autores importantes.', '2026-10-24', '19:00:00', 'Espaço Lumière', 40, 20.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYNwPNhlbQcrUoRWjVSEn3CgD5XJZJHecsd83uhtmfb9WPochujXjbe0dd&s=10', 0, 1, '2026-09-20 23:47:33'),
+(4, 'Oficina de Escrita Criativa', 'Uma oficina para desenvolver ideias, personagens e pequenas histórias.', '2026-11-07', '14:00:00', 'Sala de Leitura', 20, 25.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiRHcHED1iK7Gm51QW953LtqRzDL2k4PkGn2tOdnSrd-ZD4Qx57AiTp04G&s=10', 0, 1, '2026-09-20 23:47:33'),
+(5, 'Sarau Lumière', 'Uma noite de literatura, música e apresentações em um ambiente inspirado nos cafés literários.', '2026-11-14', '19:30:00', 'Salão Principal', 50, 10.00, 'https://consed.org.br/storage/news/7ubbsno61lkkjjfbcg6mlzsrv0due8.jpeg', 1, 1, '2026-09-20 23:47:33');
 
 -- --------------------------------------------------------
 
@@ -78,9 +78,10 @@ CREATE TABLE `livros` (
 --
 
 INSERT INTO `livros` (`id`, `titulo`, `autor`, `genero`, `sinopse`, `preco`, `tipo`, `imagem`, `destaque`, `ativo`, `criado_em`) VALUES
-(1, 'O Pequeno Príncipe', 'Antoine de Saint-Exupéry', 'Literatura', 'Uma história sobre amizade, afeto e diferentes formas de enxergar o mundo.', 39.90, 'compra', NULL, 0, 1, '2026-09-20 21:27:37'),
-(2, 'Dom Casmurro', 'Machado de Assis', 'Romance', 'Clássico da literatura brasileira narrado por Bentinho.', 34.90, 'compra', NULL, 0, 1, '2026-09-20 21:27:37'),
-(4, 'O Alienista', 'Machado de Assis', 'Realismo', 'Uma obra que apresenta uma reflexão sobre a ciência e os limites da razão.', 28.90, '', '', 0, 1, '2026-09-20 23:24:59');
+(1, 'O Pequeno Príncipe', 'Antoine de Saint-Exupéry', 'Literatura', 'A história de O Pequeno Príncipe, clássico de Antoine de Saint-Exupéry, narra a amizade entre um piloto perdido no deserto do Saara após uma pane no avião e um menino de cabelos dourados que veio de um pequeno asteroide.', 39.90, 'compra', 'https://down-br.img.susercontent.com/file/sg-11134201-822yy-mo5f7rm0pxxg3b', 0, 1, '2026-09-20 21:27:37'),
+(2, 'Dom Casmurro', 'Machado de Assis', 'Romance', 'O livro Dom Casmurro, escrito por Machado de Assis e publicado em 1899, conta a história de Bento Santiago (o Bentinho), que, já velho e solitário, decide escrever suas memórias para \"atar as duas pontas da vida\", ou seja, unir a infância à velhice.', 34.90, 'compra', 'https://http2.mlstatic.com/D_NQ_NP_669175-MLB112451310387_052026-O.webp', 0, 1, '2026-09-20 21:27:37'),
+(4, 'O Alienista', 'Machado de Assis', 'Realismo', 'O Alienista é uma obra literária humorística do escritor brasileiro Machado de Assis. Muitos consideram-no um conto, mas a maioria dos críticos e especialistas consideram-no uma novela por causa da sua estrutura narrativa.', 28.90, 'compra', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ49MGwWocP48O6pI3gMVD7p4nYkkVvWgJmVNAjuQypqHscTTokV6sshMZE&s=10', 0, 1, '2026-09-20 23:24:59'),
+(5, 'Harry Potter e a Pedra Filosofal', 'J. K. Rowling', 'Fantasia', 'Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente, Harry é impedido de ler a carta por seu tio, mas logo recebe a visita de Hagrid, o guarda-caça de Hogwarts, que chega para levá-lo até a escola. Harry adentra um mundo mágico que jamais imaginara, vivendo diversas aventuras com seus novos amigos, Rony Weasley e Hermione Granger.', 42.90, 'aluguel', 'https://s2-g1.glbimg.com/XFurlRkFeDN-ESD-r6PBPES8-cE=/0x0:4000x2774/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/o/n/iumOweSGyo3npyFT7u7w/harry-potter-leilao.jpg', 0, 1, '2026-09-21 04:14:51');
 
 -- --------------------------------------------------------
 
@@ -162,20 +163,20 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `categoria`, `descricao`, `preco`, `imagem`, `destaque`, `ativo`, `criado_em`) VALUES
-(1, 'Espresso Lumière', '', 'Espresso intenso e aromático, preparado na hora.', 8.90, 'imagens/produtos/produto_6ab09a86d08590.73635974.jpg', 1, 1, '2026-09-20 21:15:51'),
-(2, 'Cappuccino Clássico', '', 'Espresso, leite vaporizado e espuma cremosa.', 13.90, 'imagens/produtos/produto_6ab09a7f54cdb4.39709488.jpg', 1, 1, '2026-09-20 21:15:51'),
-(3, 'Cold Brew', '', 'Café extraído a frio, leve e refrescante.', 14.90, 'imagens/produtos/produto_6ab09a7760cd03.25874014.jpg', 0, 1, '2026-09-20 21:15:51'),
-(4, 'Chocolate da Casa', '', 'Chocolate quente cremoso com toque de baunilha.', 15.90, 'imagens/produtos/produto_6ab09a704d7511.20429040.jpg', 0, 1, '2026-09-20 21:15:51'),
-(6, 'Cookie Lumière', '', 'Cookie artesanal com chocolate meio amargo.', 9.90, 'imagens/produtos/produto_6ab09a35831982.53173074.jpg', 0, 1, '2026-09-20 21:15:51'),
-(7, 'Café + Livro', '', 'Um café especial acompanhado de desconto em um livro selecionado.', 29.90, 'imagens/produtos/produto_6ab09a2935e5d4.75732731.jpg', 1, 1, '2026-09-20 21:15:51'),
-(8, 'Brunch Lumière', '', 'Seleção da casa para uma manhã tranquila.', 39.90, 'imagens/produtos/produto_6ab099fcae25f9.77742511.jpg', 0, 1, '2026-09-20 21:15:51'),
-(9, 'Café Lumière', '', 'Café especial da casa preparado com grãos selecionados.', 9.90, 'imagens/produtos/produto_6ab099f0a86dc0.88005234.jpg', 1, 1, '2026-09-20 22:08:31'),
-(10, 'Cappuccino Cremoso', '', 'Cappuccino preparado com café espresso, leite vaporizado e espuma cremosa.', 14.90, 'imagens/produtos/produto_6ab099e972e1c9.59453531.jpg', 1, 1, '2026-09-20 22:08:31'),
-(11, 'Chocolate Quente', '', 'Chocolate quente cremoso, perfeito para acompanhar uma boa leitura.', 13.90, 'imagens/produtos/produto_6ab099da7d40c4.79678238.jpg', 0, 1, '2026-09-20 22:08:31'),
-(13, 'Cheesecake de Frutas Vermelhas', '', 'Cheesecake artesanal com cobertura de frutas vermelhas.', 18.90, 'imagens/produtos/produto_6ab099c782bd82.95634323.jpg', 1, 1, '2026-09-20 22:08:31'),
-(14, 'Brownie com Sorvete', '', 'Brownie artesanal servido com uma bola de sorvete.', 19.90, 'imagens/produtos/produto_6ab099bd8ac807.01706488.jpg', 0, 1, '2026-09-20 22:08:31'),
-(15, 'Combo Leitura', '', 'Café especial acompanhado de uma sobremesa da casa.', 24.90, 'imagens/produtos/produto_6ab099b4943377.84184012.jpg', 1, 1, '2026-09-20 22:08:31'),
-(16, 'Combo Lumière', '', 'Cappuccino, brownie e uma bebida especial da casa.', 29.90, 'imagens/produtos/produto_6ab09e96b3ae34.96100368.jpg', 0, 1, '2026-09-20 22:08:31');
+(1, 'Espresso Lumière', '', 'Espresso intenso e aromático, preparado na hora.', 8.90, 'imagens/produtos/produto_6ab11834bb2f11.47049636.jpg', 1, 1, '2026-09-20 21:15:51'),
+(2, 'Cappuccino Clássico', '', 'Espresso, leite vaporizado e espuma cremosa.', 13.90, 'imagens/produtos/produto_6ab1182a0afd51.86435764.jpg', 1, 1, '2026-09-20 21:15:51'),
+(3, 'Cold Brew', '', 'Café extraído a frio, leve e refrescante.', 14.90, 'imagens/produtos/produto_6ab1182151c633.33691108.jpg', 0, 1, '2026-09-20 21:15:51'),
+(4, 'Chocolate da Casa', '', 'Chocolate quente cremoso com toque de baunilha.', 15.90, 'imagens/produtos/produto_6ab1181af15b01.07235851.jpg', 0, 1, '2026-09-20 21:15:51'),
+(6, 'Cookie Lumière', '', 'Cookie artesanal com chocolate meio amargo.', 9.90, 'imagens/produtos/produto_6ab118133f0fb7.59284386.jpg', 0, 1, '2026-09-20 21:15:51'),
+(7, 'Café + Livro', '', 'Um café especial acompanhado de desconto em um livro selecionado.', 29.90, 'imagens/produtos/produto_6ab1180993c8e3.23288574.jpg', 1, 1, '2026-09-20 21:15:51'),
+(8, 'Brunch Lumière', '', 'Seleção da casa para uma manhã tranquila.', 39.90, 'imagens/produtos/produto_6ab1173bcf02a5.35349881.jpg', 0, 1, '2026-09-20 21:15:51'),
+(9, 'Café Lumière', '', 'Café especial da casa preparado com grãos selecionados.', 9.90, 'imagens/produtos/produto_6ab11730e2ddf9.73793745.jpg', 1, 1, '2026-09-20 22:08:31'),
+(10, 'Cappuccino Cremoso', '', 'Cappuccino preparado com café espresso, leite vaporizado e espuma cremosa.', 14.90, 'imagens/produtos/produto_6ab11724925b78.25292596.jpg', 1, 1, '2026-09-20 22:08:31'),
+(11, 'Chocolate Quente', '', 'Chocolate quente cremoso, perfeito para acompanhar uma boa leitura.', 13.90, 'imagens/produtos/produto_6ab1171b300505.10799573.jpg', 0, 1, '2026-09-20 22:08:31'),
+(13, 'Cheesecake de Frutas Vermelhas', '', 'Cheesecake artesanal com cobertura de frutas vermelhas.', 18.90, 'imagens/produtos/produto_6ab1170f9e5549.32889733.jpg', 1, 1, '2026-09-20 22:08:31'),
+(14, 'Brownie com Sorvete', '', 'Brownie artesanal servido com uma bola de sorvete.', 19.90, 'imagens/produtos/produto_6ab11706c5b482.37424132.jpg', 0, 1, '2026-09-20 22:08:31'),
+(15, 'Combo Leitura', '', 'Café especial acompanhado de uma sobremesa da casa.', 24.90, 'imagens/produtos/produto_6ab116f75439a2.88025988.jpg', 1, 1, '2026-09-20 22:08:31'),
+(16, 'Combo Lumière', '', 'Cappuccino, brownie e uma bebida especial da casa.', 29.90, 'imagens/produtos/produto_6ab0b49234b8a5.13326299.jpg', 0, 1, '2026-09-20 22:08:31');
 
 -- --------------------------------------------------------
 
@@ -288,7 +289,7 @@ ALTER TABLE `eventos`
 -- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `mensagens`
