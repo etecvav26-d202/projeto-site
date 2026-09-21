@@ -122,12 +122,8 @@ $eventos = $pdo->query("
             </article>
             <article class="card reveal">
                 <div class="card-image">
-                    <div class="image-placeholder">
-                        FOTO DO CAFÉ
-                    </div>
-
                     <img
-                        src="assets/img/cafe-destaque.jpg"
+                        src="imagens/branded_01_cafe_lumiere.jpg"
                         alt="Café especial"
                     >
                 </div>
@@ -145,12 +141,9 @@ $eventos = $pdo->query("
 
             <article class="card reveal">
                 <div class="card-image">
-                    <div class="image-placeholder">
-                        FOTO DOS LIVROS
-                    </div>
 
                     <img
-                        src="assets/img/livros.jpg"
+                        src="imagens/branded_02_livros_harry_potter.jpg"
                         alt="Livros na cafeteria"
                     >
                 </div>
