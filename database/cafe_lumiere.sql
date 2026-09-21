@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/09/2026 às 02:52
+-- Tempo de geração: 21/09/2026 às 04:57
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -170,22 +170,20 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `categoria`, `descricao`, `preco`, `imagem`, `destaque`, `ativo`, `criado_em`) VALUES
-(1, 'Espresso Lumière', 'cafe', 'Espresso intenso e aromático, preparado na hora.', 8.90, 'assets/img/espresso.jpg', 1, 1, '2026-09-20 21:15:51'),
-(2, 'Cappuccino Clássico', 'cafe', 'Espresso, leite vaporizado e espuma cremosa.', 13.90, 'assets/img/cappuccino.jpg', 1, 1, '2026-09-20 21:15:51'),
-(3, 'Cold Brew', 'bebida', 'Café extraído a frio, leve e refrescante.', 14.90, 'assets/img/cold-brew.jpg', 0, 1, '2026-09-20 21:15:51'),
-(4, 'Chocolate da Casa', 'bebida', 'Chocolate quente cremoso com toque de baunilha.', 15.90, 'assets/img/chocolate.jpg', 0, 1, '2026-09-20 21:15:51'),
-(5, 'Cheesecake de Frutas', 'sobremesa', 'Cheesecake artesanal com cobertura de frutas vermelhas.', 18.90, 'assets/img/cheesecake.jpg', 1, 1, '2026-09-20 21:15:51'),
-(6, 'Cookie Lumière', 'sobremesa', 'Cookie artesanal com chocolate meio amargo.', 9.90, 'assets/img/cookie.jpg', 0, 1, '2026-09-20 21:15:51'),
-(7, 'Café + Livro', 'combo', 'Um café especial acompanhado de desconto em um livro selecionado.', 29.90, 'assets/img/combo.jpg', 1, 1, '2026-09-20 21:15:51'),
-(8, 'Brunch Lumière', 'combo', 'Seleção da casa para uma manhã tranquila.', 39.90, 'assets/img/brunch.jpg', 0, 1, '2026-09-20 21:15:51'),
-(9, 'Café Lumière', '', 'Café especial da casa preparado com grãos selecionados.', 9.90, 'assets/img/cafe-lumiere.jpg', 1, 1, '2026-09-20 22:08:31'),
-(10, 'Cappuccino Cremoso', '', 'Cappuccino preparado com café espresso, leite vaporizado e espuma cremosa.', 14.90, 'assets/img/cappuccino.jpg', 1, 1, '2026-09-20 22:08:31'),
-(11, 'Chocolate Quente', '', 'Chocolate quente cremoso, perfeito para acompanhar uma boa leitura.', 13.90, 'assets/img/chocolate-quente.jpg', 0, 1, '2026-09-20 22:08:31'),
-(12, 'Cold Brew', '', 'Café extraído a frio, servido gelado e refrescante.', 15.90, 'assets/img/cold-brew.jpg', 0, 1, '2026-09-20 22:08:31'),
-(13, 'Cheesecake de Frutas Vermelhas', '', 'Cheesecake artesanal com cobertura de frutas vermelhas.', 18.90, 'assets/img/cheesecake.jpg', 1, 1, '2026-09-20 22:08:31'),
-(14, 'Brownie com Sorvete', '', 'Brownie artesanal servido com uma bola de sorvete.', 19.90, 'assets/img/brownie.jpg', 0, 1, '2026-09-20 22:08:31'),
-(15, 'Combo Leitura', '', 'Café especial acompanhado de uma sobremesa da casa.', 24.90, 'assets/img/combo-leitura.jpg', 1, 1, '2026-09-20 22:08:31'),
-(16, 'Combo Lumière', '', 'Cappuccino, brownie e uma bebida especial da casa.', 29.90, 'assets/img/combo-lumiere.jpg', 0, 1, '2026-09-20 22:08:31');
+(1, 'Espresso Lumière', '', 'Espresso intenso e aromático, preparado na hora.', 8.90, 'imagens/produtos/produto_6ab09a86d08590.73635974.jpg', 1, 1, '2026-09-20 21:15:51'),
+(2, 'Cappuccino Clássico', '', 'Espresso, leite vaporizado e espuma cremosa.', 13.90, 'imagens/produtos/produto_6ab09a7f54cdb4.39709488.jpg', 1, 1, '2026-09-20 21:15:51'),
+(3, 'Cold Brew', '', 'Café extraído a frio, leve e refrescante.', 14.90, 'imagens/produtos/produto_6ab09a7760cd03.25874014.jpg', 0, 1, '2026-09-20 21:15:51'),
+(4, 'Chocolate da Casa', '', 'Chocolate quente cremoso com toque de baunilha.', 15.90, 'imagens/produtos/produto_6ab09a704d7511.20429040.jpg', 0, 1, '2026-09-20 21:15:51'),
+(6, 'Cookie Lumière', '', 'Cookie artesanal com chocolate meio amargo.', 9.90, 'imagens/produtos/produto_6ab09a35831982.53173074.jpg', 0, 1, '2026-09-20 21:15:51'),
+(7, 'Café + Livro', '', 'Um café especial acompanhado de desconto em um livro selecionado.', 29.90, 'imagens/produtos/produto_6ab09a2935e5d4.75732731.jpg', 1, 1, '2026-09-20 21:15:51'),
+(8, 'Brunch Lumière', '', 'Seleção da casa para uma manhã tranquila.', 39.90, 'imagens/produtos/produto_6ab099fcae25f9.77742511.jpg', 0, 1, '2026-09-20 21:15:51'),
+(9, 'Café Lumière', '', 'Café especial da casa preparado com grãos selecionados.', 9.90, 'imagens/produtos/produto_6ab099f0a86dc0.88005234.jpg', 1, 1, '2026-09-20 22:08:31'),
+(10, 'Cappuccino Cremoso', '', 'Cappuccino preparado com café espresso, leite vaporizado e espuma cremosa.', 14.90, 'imagens/produtos/produto_6ab099e972e1c9.59453531.jpg', 1, 1, '2026-09-20 22:08:31'),
+(11, 'Chocolate Quente', '', 'Chocolate quente cremoso, perfeito para acompanhar uma boa leitura.', 13.90, 'imagens/produtos/produto_6ab099da7d40c4.79678238.jpg', 0, 1, '2026-09-20 22:08:31'),
+(13, 'Cheesecake de Frutas Vermelhas', '', 'Cheesecake artesanal com cobertura de frutas vermelhas.', 18.90, 'imagens/produtos/produto_6ab099c782bd82.95634323.jpg', 1, 1, '2026-09-20 22:08:31'),
+(14, 'Brownie com Sorvete', '', 'Brownie artesanal servido com uma bola de sorvete.', 19.90, 'imagens/produtos/produto_6ab099bd8ac807.01706488.jpg', 0, 1, '2026-09-20 22:08:31'),
+(15, 'Combo Leitura', '', 'Café especial acompanhado de uma sobremesa da casa.', 24.90, 'imagens/produtos/produto_6ab099b4943377.84184012.jpg', 1, 1, '2026-09-20 22:08:31'),
+(16, 'Combo Lumière', '', 'Cappuccino, brownie e uma bebida especial da casa.', 29.90, 'imagens/produtos/produto_6ab097e6458bf4.63279641.jpg', 0, 1, '2026-09-20 22:08:31');
 
 -- --------------------------------------------------------
 

@@ -123,7 +123,7 @@ $eventos = $pdo->query("
             <article class="card reveal">
                 <div class="card-image">
                     <img
-                        src="imagens/branded_01_cafe_lumiere.jpg"
+                        src="imagens/produtos/branded_01_cafe_lumiere.jpg"
                         alt="Café especial"
                     >
                 </div>
