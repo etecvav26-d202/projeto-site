@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/09/2026 às 01:06
+-- Tempo de geração: 21/09/2026 às 02:12
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -34,8 +34,32 @@ SET time_zone = "+00:00";
 --
 -- Estrutura para tabela `eventos`
 --
--- Erro ao ler a estrutura para a tabela cafe_lumiere.eventos: #1932 - Table &#039;cafe_lumiere.eventos&#039; doesn&#039;t exist in engine
--- Erro ao ler dados para tabela cafe_lumiere.eventos: #1064 - Você tem um erro de sintaxe no seu SQL próximo a &#039;FROM `cafe_lumiere`.`eventos`&#039; na linha 1
+
+CREATE TABLE `eventos` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(200) NOT NULL,
+  `descricao` text NOT NULL,
+  `data_evento` date NOT NULL,
+  `horario` time NOT NULL,
+  `local_evento` varchar(200) NOT NULL,
+  `vagas` int(11) DEFAULT 0,
+  `preco` decimal(10,2) DEFAULT 0.00,
+  `imagem` varchar(255) DEFAULT NULL,
+  `destaque` tinyint(1) DEFAULT 0,
+  `ativo` tinyint(1) DEFAULT 1,
+  `criado_em` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Despejando dados para a tabela `eventos`
+--
+
+INSERT INTO `eventos` (`id`, `titulo`, `descricao`, `data_evento`, `horario`, `local_evento`, `vagas`, `preco`, `imagem`, `destaque`, `ativo`, `criado_em`) VALUES
+(1, 'Clube do Livro: Realismo Brasileiro', 'Um encontro para conversar sobre grandes obras do Realismo brasileiro e compartilhar diferentes interpretações.', '2026-10-10', '15:00:00', 'Salão Literário', 25, 0.00, 'assets/img/evento-realismo.jpg', 1, 1, '2026-09-20 23:47:33'),
+(2, 'Café & Poesia', 'Uma tarde especial com café, leitura de poemas e espaço para conversar sobre literatura.', '2026-10-17', '16:00:00', 'Salão Principal', 30, 15.00, 'assets/img/cafe-poesia.jpg', 1, 1, '2026-09-20 23:47:33'),
+(3, 'Noite de Autores Brasileiros', 'Encontro dedicado à literatura brasileira, com leituras e apresentação de autores importantes.', '2026-10-24', '19:00:00', 'Espaço Lumière', 40, 20.00, 'assets/img/autores-brasileiros.jpg', 0, 1, '2026-09-20 23:47:33'),
+(4, 'Oficina de Escrita Criativa', 'Uma oficina para desenvolver ideias, personagens e pequenas histórias.', '2026-11-07', '14:00:00', 'Sala de Leitura', 20, 25.00, 'assets/img/escrita-criativa.jpg', 0, 1, '2026-09-20 23:47:33'),
+(5, 'Sarau Lumière', 'Uma noite de literatura, música e apresentações em um ambiente inspirado nos cafés literários.', '2026-11-14', '19:30:00', 'Salão Principal', 50, 10.00, 'assets/img/sarau.jpg', 1, 1, '2026-09-20 23:47:33');
 
 -- --------------------------------------------------------
 
@@ -64,7 +88,7 @@ CREATE TABLE `livros` (
 INSERT INTO `livros` (`id`, `titulo`, `autor`, `genero`, `sinopse`, `preco`, `tipo`, `imagem`, `destaque`, `ativo`, `criado_em`) VALUES
 (1, 'O Pequeno Príncipe', 'Antoine de Saint-Exupéry', 'Literatura', 'Uma história sobre amizade, afeto e diferentes formas de enxergar o mundo.', 39.90, 'compra', NULL, 0, 1, '2026-09-20 21:27:37'),
 (2, 'Dom Casmurro', 'Machado de Assis', 'Romance', 'Clássico da literatura brasileira narrado por Bentinho.', 34.90, 'compra', NULL, 0, 1, '2026-09-20 21:27:37'),
-(3, 'Orgulho e Preconceito', 'Jane Austen', 'Romance', 'Um clássico que acompanha Elizabeth Bennet e suas relações.', 42.90, 'compra', NULL, 0, 1, '2026-09-20 21:27:37');
+(4, 'O Alienista', 'Machado de Assis', 'Realismo', 'Uma obra que apresenta uma reflexão sobre a ciência e os limites da razão.', 28.90, '', '', 0, 1, '2026-09-20 23:24:59');
 
 -- --------------------------------------------------------
 
@@ -80,6 +104,34 @@ CREATE TABLE `mensagens` (
   `mensagem` text NOT NULL,
   `criado_em` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `pedidos`
+--
+
+CREATE TABLE `pedidos` (
+  `id` int(11) NOT NULL,
+  `usuario_id` int(11) NOT NULL,
+  `total` decimal(10,2) NOT NULL DEFAULT 0.00,
+  `status` enum('pendente','confirmado','cancelado') DEFAULT 'pendente',
+  `criado_em` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `pedido_itens`
+--
+
+CREATE TABLE `pedido_itens` (
+  `id` int(11) NOT NULL,
+  `pedido_id` int(11) NOT NULL,
+  `produto_id` int(11) NOT NULL,
+  `quantidade` int(11) NOT NULL DEFAULT 1,
+  `preco` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -157,6 +209,12 @@ CREATE TABLE `usuarios` (
 --
 
 --
+-- Índices de tabela `eventos`
+--
+ALTER TABLE `eventos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices de tabela `livros`
 --
 ALTER TABLE `livros`
@@ -167,6 +225,21 @@ ALTER TABLE `livros`
 --
 ALTER TABLE `mensagens`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Índices de tabela `pedidos`
+--
+ALTER TABLE `pedidos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `usuario_id` (`usuario_id`);
+
+--
+-- Índices de tabela `pedido_itens`
+--
+ALTER TABLE `pedido_itens`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `pedido_id` (`pedido_id`),
+  ADD KEY `produto_id` (`produto_id`);
 
 --
 -- Índices de tabela `produtos`
@@ -193,15 +266,33 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de tabela `eventos`
+--
+ALTER TABLE `eventos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `mensagens`
 --
 ALTER TABLE `mensagens`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `pedidos`
+--
+ALTER TABLE `pedidos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `pedido_itens`
+--
+ALTER TABLE `pedido_itens`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -225,6 +316,19 @@ ALTER TABLE `usuarios`
 --
 -- Restrições para tabelas despejadas
 --
+
+--
+-- Restrições para tabelas `pedidos`
+--
+ALTER TABLE `pedidos`
+  ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE;
+
+--
+-- Restrições para tabelas `pedido_itens`
+--
+ALTER TABLE `pedido_itens`
+  ADD CONSTRAINT `pedido_itens_ibfk_1` FOREIGN KEY (`pedido_id`) REFERENCES `pedidos` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `pedido_itens_ibfk_2` FOREIGN KEY (`produto_id`) REFERENCES `produtos` (`id`) ON DELETE CASCADE;
 
 --
 -- Restrições para tabelas `reservas`
