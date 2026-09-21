@@ -58,19 +58,19 @@
             </h3>
 
             <p>
-                Rua das Letras, 123
+                Av. Macedo Soares, 479
             </p>
 
             <p>
-                Jundiaí — SP
+                Capivari, Campos do Jordão - SP
             </p>
 
             <p>
-                Segunda a sábado
+                Segunda a Sábado, das 08h às 21h
             </p>
 
             <p>
-                09h às 21h
+                Domingo, das 09h às 14h
             </p>
 
         </div>
