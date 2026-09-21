@@ -94,10 +94,6 @@ if (session_status() === PHP_SESSION_NONE) {
                 Eventos
             </a>
 
-            <a href="reservas.php">
-                Reservas
-            </a>
-
             <a href="contato.php">
                 Contato
             </a>

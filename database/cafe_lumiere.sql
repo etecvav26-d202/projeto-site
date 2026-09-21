@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/09/2026 às 02:12
+-- Tempo de geração: 21/09/2026 às 02:52
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -119,6 +119,13 @@ CREATE TABLE `pedidos` (
   `criado_em` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Despejando dados para a tabela `pedidos`
+--
+
+INSERT INTO `pedidos` (`id`, `usuario_id`, `total`, `status`, `criado_em`) VALUES
+(1, 1, 19.90, 'confirmado', '2026-09-21 00:51:15');
+
 -- --------------------------------------------------------
 
 --
@@ -132,6 +139,13 @@ CREATE TABLE `pedido_itens` (
   `quantidade` int(11) NOT NULL DEFAULT 1,
   `preco` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Despejando dados para a tabela `pedido_itens`
+--
+
+INSERT INTO `pedido_itens` (`id`, `pedido_id`, `produto_id`, `quantidade`, `preco`) VALUES
+(1, 1, 14, 1, 19.90);
 
 -- --------------------------------------------------------
 
@@ -182,6 +196,7 @@ INSERT INTO `produtos` (`id`, `nome`, `categoria`, `descricao`, `preco`, `imagem
 CREATE TABLE `reservas` (
   `id` int(11) NOT NULL,
   `usuario_id` int(11) NOT NULL,
+  `evento_id` int(11) NOT NULL,
   `data_reserva` date NOT NULL,
   `hora_reserva` time NOT NULL,
   `pessoas` int(11) NOT NULL,
@@ -203,6 +218,13 @@ CREATE TABLE `usuarios` (
   `senha` varchar(255) NOT NULL,
   `criado_em` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `criado_em`) VALUES
+(1, 'Infonet', 'infonetdavav@gmail.com', '$2y$10$OKw6C6sf0PS2cztEhy1EY.vj99.35oOmFDjFTCMyq58LKUoCahfvK', '2026-09-21 00:40:05');
 
 --
 -- Índices para tabelas despejadas
@@ -252,7 +274,8 @@ ALTER TABLE `produtos`
 --
 ALTER TABLE `reservas`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_reserva_usuario` (`usuario_id`);
+  ADD KEY `fk_reserva_usuario` (`usuario_id`),
+  ADD KEY `fk_reservas_evento` (`evento_id`);
 
 --
 -- Índices de tabela `usuarios`
@@ -287,13 +310,13 @@ ALTER TABLE `mensagens`
 -- AUTO_INCREMENT de tabela `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `pedido_itens`
 --
 ALTER TABLE `pedido_itens`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
@@ -311,7 +334,7 @@ ALTER TABLE `reservas`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restrições para tabelas despejadas
@@ -334,7 +357,8 @@ ALTER TABLE `pedido_itens`
 -- Restrições para tabelas `reservas`
 --
 ALTER TABLE `reservas`
-  ADD CONSTRAINT `fk_reserva_usuario` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `fk_reserva_usuario` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk_reservas_evento` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
