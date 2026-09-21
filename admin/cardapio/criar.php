@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 $nomeArquivo = uniqid('produto_', true) . '.' . $extensao;
 
-                $pasta = '../../assets/img/produtos/';
+                $pasta = '../../imagens/produtos/';
 
                 if (!is_dir($pasta)) {
                     mkdir($pasta, 0755, true);
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     )
                 ) {
 
-                    $imagem = 'assets/img/produtos/' . $nomeArquivo;
+                    $imagem = 'imagens/produtos/' . $nomeArquivo;
 
                 } else {
 
