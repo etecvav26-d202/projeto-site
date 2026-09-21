@@ -73,7 +73,10 @@ $eventos = $pdo->query("
                 alt="Ambiente do Café Lumière"
             >
             <div class="image-placeholder">
-                COLOQUE SUA FOTO AQUI
+                            <img
+                src="imagens/cafe_lumiere_ambiente.jpg"
+                alt="Ambiente do Café Lumière"
+                >
             </div>
         </div>
     </div>
