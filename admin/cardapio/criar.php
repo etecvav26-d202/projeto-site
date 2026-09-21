@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-require_once '../header.php';
+require_once '../../includes/header.php';
 ?>
 
 <div class="admin-container">
@@ -277,4 +277,4 @@ require_once '../header.php';
 
 </div>
 
-<?php require_once '../footer.php'; ?>
+<?php require_once '../../includes/footer.php'; ?>
