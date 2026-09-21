@@ -2,20 +2,7 @@
 if (!isset($tituloPagina)) {
     $tituloPagina = 'Café Lumière';
 }
-
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
-if (isset($_SESSION['usuario_id'])): ?>
-
-    <a href="minha-conta.php">Minha conta</a>
-
-<?php else: ?>
-
-    <a href="login.php">Entrar</a>
-
-<?php endif; ?>
+?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
