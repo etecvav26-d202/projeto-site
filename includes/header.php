@@ -111,7 +111,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
             <?php if (isset($_SESSION['usuario_id'])): ?>
                 
-                <a href="minha-conta.php">Minha conta</a>
+                <a href="minha_conta.php">Minha conta</a>
                 
                 <?php else: ?>
                     
