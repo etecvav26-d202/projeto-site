@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $quantidade
         ]);
 
-        header('Location: minha-conta.php');
+        header('Location: minha_conta.php');
         exit;
     }
 }
