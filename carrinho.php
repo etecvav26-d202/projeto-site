@@ -194,14 +194,7 @@ require 'includes/header.php';
                         '.'
                     ) ?>
                 </strong>
-
-                <a
-                    href="#"
-                    class="btn btn-primary"
-                >
-                    Finalizar pedido
-                </a>
-
+                <a href="finalizar_pedido.php" class="btn btn-primary"> Finalizar pedido </a>
             </div>
 
         <?php endif; ?>
