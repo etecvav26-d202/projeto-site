@@ -190,9 +190,6 @@ $eventos = $pdo->query("
             <?php foreach ($produtos as $produto): ?>
                 <article class="product-card reveal">
                     <div class="product-image">
-                        <div class="image-placeholder">
-                            IMAGEM DO PRODUTO
-                        </div>
 
                         <img
                             src="<?= htmlspecialchars($produto['imagem']) ?>"
