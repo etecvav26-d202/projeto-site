@@ -42,7 +42,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
     <link
         rel="stylesheet"
-        href="css/style.css"
+        href=""
+        href="/projeto-site/assets/css/style.css"
     >
 
 </head>
