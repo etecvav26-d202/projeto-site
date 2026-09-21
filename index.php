@@ -143,7 +143,7 @@ $eventos = $pdo->query("
                 <div class="card-image">
 
                     <img
-                        src="imagens/branded_02_livros_harry_potter.jpg"
+                        src="imagens/produtos/branded_02_livros_harry_potter.jpg"
                         alt="Livros na cafeteria"
                     >
                 </div>

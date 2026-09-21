@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/09/2026 às 04:57
+-- Tempo de geração: 21/09/2026 às 05:17
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -20,14 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `cafe_lumiere`
 --
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `cardapio`
---
--- Erro ao ler a estrutura para a tabela cafe_lumiere.cardapio: #1932 - Table &#039;cafe_lumiere.cardapio&#039; doesn&#039;t exist in engine
--- Erro ao ler dados para tabela cafe_lumiere.cardapio: #1064 - Você tem um erro de sintaxe no seu SQL próximo a &#039;FROM `cafe_lumiere`.`cardapio`&#039; na linha 1
 
 -- --------------------------------------------------------
 
@@ -183,7 +175,7 @@ INSERT INTO `produtos` (`id`, `nome`, `categoria`, `descricao`, `preco`, `imagem
 (13, 'Cheesecake de Frutas Vermelhas', '', 'Cheesecake artesanal com cobertura de frutas vermelhas.', 18.90, 'imagens/produtos/produto_6ab099c782bd82.95634323.jpg', 1, 1, '2026-09-20 22:08:31'),
 (14, 'Brownie com Sorvete', '', 'Brownie artesanal servido com uma bola de sorvete.', 19.90, 'imagens/produtos/produto_6ab099bd8ac807.01706488.jpg', 0, 1, '2026-09-20 22:08:31'),
 (15, 'Combo Leitura', '', 'Café especial acompanhado de uma sobremesa da casa.', 24.90, 'imagens/produtos/produto_6ab099b4943377.84184012.jpg', 1, 1, '2026-09-20 22:08:31'),
-(16, 'Combo Lumière', '', 'Cappuccino, brownie e uma bebida especial da casa.', 29.90, 'imagens/produtos/produto_6ab097e6458bf4.63279641.jpg', 0, 1, '2026-09-20 22:08:31');
+(16, 'Combo Lumière', '', 'Cappuccino, brownie e uma bebida especial da casa.', 29.90, 'imagens/produtos/produto_6ab09e96b3ae34.96100368.jpg', 0, 1, '2026-09-20 22:08:31');
 
 -- --------------------------------------------------------
 
