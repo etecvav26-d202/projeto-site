@@ -22,9 +22,7 @@ $stmt = $pdo->prepare("
     WHERE id = ?
     AND ativo = 1
 ");
-
 $stmt->execute([$eventoId]);
-
 $evento = $stmt->fetch();
 
 if (!$evento) {
@@ -33,33 +31,29 @@ if (!$evento) {
 }
 
 $tituloPagina = 'Reservar evento';
-
 $erro = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $pessoas = (int)($_POST['pessoas'] ?? 0);
 
-    $quantidade = (int) ($_POST['quantidade'] ?? 0);
-
-    if ($quantidade < 1) {
-
-        $erro = 'Escolha pelo menos uma vaga.';
-
-    } elseif ($quantidade > $evento['vagas']) {
-
+    if ($pessoas < 1) {
+        $erro = 'Escolha pelo menos uma pessoa.';
+    } elseif ($pessoas > $evento['vagas']) {
         $erro = 'A quantidade solicitada é maior que o número de vagas disponíveis.';
-
     } else {
-
         $stmt = $pdo->prepare("
             INSERT INTO reservas
-            (usuario_id, evento_id, quantidade)
-            VALUES (?, ?, ?)
+            (usuario_id, evento_id, data_reserva, hora_reserva, pessoas, observacoes)
+            VALUES (?, ?, ?, ?, ?, ?)
         ");
 
         $stmt->execute([
             $_SESSION['usuario_id'],
             $eventoId,
-            $quantidade
+            $evento['data_evento'],
+            $evento['horario'],
+            $pessoas,
+            ''
         ]);
 
         header('Location: minha_conta.php');
@@ -80,17 +74,13 @@ require 'includes/header.php';
 </section>
 
 <section class="section">
-
     <div class="container">
-
         <div class="admin-form account-form">
 
             <?php if ($erro): ?>
-
                 <div class="form-error">
                     <?= htmlspecialchars($erro) ?>
                 </div>
-
             <?php endif; ?>
 
             <h2>
@@ -109,27 +99,25 @@ require 'includes/header.php';
 
             <p>
                 Vagas disponíveis:
-                <?= (int) $evento['vagas'] ?>
+                <?= (int)$evento['vagas'] ?>
             </p>
 
             <form method="POST">
 
                 <div class="form-group">
-
-                    <label for="quantidade">
-                        Quantidade de vagas
+                    <label for="pessoas">
+                        Quantidade de pessoas
                     </label>
 
                     <input
                         type="number"
-                        id="quantidade"
-                        name="quantidade"
+                        id="pessoas"
+                        name="pessoas"
                         min="1"
-                        max="<?= (int) $evento['vagas'] ?>"
+                        max="<?= (int)$evento['vagas'] ?>"
                         value="1"
                         required
                     >
-
                 </div>
 
                 <button
@@ -149,9 +137,7 @@ require 'includes/header.php';
             </form>
 
         </div>
-
     </div>
-
 </section>
 
 <?php require 'includes/footer.php'; ?>

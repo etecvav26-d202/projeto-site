@@ -102,7 +102,7 @@ require 'includes/header.php';
 
                             <p>
                                 Vagas reservadas:
-                                <?= $reserva['quantidade'] ?>
+                                <?= $reserva['pessoas'] ?>
                             </p>
 
                             <span class="status-active">
