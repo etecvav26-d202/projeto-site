@@ -105,6 +105,11 @@ require 'includes/header.php';
                 <a href="cadastro.php">Criar conta</a>
             </p>
 
+            <p>
+                É administrador?
+                <a href="admin/login.php">Entrar como administrador</a>
+            </p>
+
         </div>
 
     </div>

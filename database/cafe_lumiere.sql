@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/09/2026 às 14:08
+-- Tempo de geração: 21/09/2026 às 15:51
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `cafe_lumiere`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `administradores`
+--
+
+CREATE TABLE `administradores` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(120) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `criado_em` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `administradores`
+--
+
+INSERT INTO `administradores` (`id`, `nome`, `email`, `senha`, `criado_em`) VALUES
+(1, 'Administrador', 'admin@cafelumiere.com', '$2y$10$BVguJjH98iTlYA17PbvSnOt01Gs4JGheLixgCLAGP09rzM5toeQgO', '2026-09-21 13:34:13');
 
 -- --------------------------------------------------------
 
@@ -117,7 +138,9 @@ CREATE TABLE `pedidos` (
 --
 
 INSERT INTO `pedidos` (`id`, `usuario_id`, `total`, `status`, `criado_em`) VALUES
-(1, 1, 19.90, 'confirmado', '2026-09-21 00:51:15');
+(1, 1, 19.90, 'confirmado', '2026-09-21 00:51:15'),
+(2, 1, 19.90, 'confirmado', '2026-09-21 12:10:43'),
+(3, 1, 19.90, 'confirmado', '2026-09-21 12:24:15');
 
 -- --------------------------------------------------------
 
@@ -138,7 +161,9 @@ CREATE TABLE `pedido_itens` (
 --
 
 INSERT INTO `pedido_itens` (`id`, `pedido_id`, `produto_id`, `quantidade`, `preco`) VALUES
-(1, 1, 14, 1, 19.90);
+(1, 1, 14, 1, 19.90),
+(2, 2, 14, 1, 19.90),
+(3, 3, 14, 1, 19.90);
 
 -- --------------------------------------------------------
 
@@ -163,20 +188,20 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `categoria`, `descricao`, `preco`, `imagem`, `destaque`, `ativo`, `criado_em`) VALUES
-(1, 'Espresso Lumière', '', 'Espresso intenso e aromático, preparado na hora.', 8.90, 'imagens/produtos/produto_6ab11834bb2f11.47049636.jpg', 1, 1, '2026-09-20 21:15:51'),
-(2, 'Cappuccino Clássico', '', 'Espresso, leite vaporizado e espuma cremosa.', 13.90, 'imagens/produtos/produto_6ab1182a0afd51.86435764.jpg', 1, 1, '2026-09-20 21:15:51'),
-(3, 'Cold Brew', '', 'Café extraído a frio, leve e refrescante.', 14.90, 'imagens/produtos/produto_6ab1182151c633.33691108.jpg', 0, 1, '2026-09-20 21:15:51'),
-(4, 'Chocolate da Casa', '', 'Chocolate quente cremoso com toque de baunilha.', 15.90, 'imagens/produtos/produto_6ab1181af15b01.07235851.jpg', 0, 1, '2026-09-20 21:15:51'),
-(6, 'Cookie Lumière', '', 'Cookie artesanal com chocolate meio amargo.', 9.90, 'imagens/produtos/produto_6ab118133f0fb7.59284386.jpg', 0, 1, '2026-09-20 21:15:51'),
-(7, 'Café + Livro', '', 'Um café especial acompanhado de desconto em um livro selecionado.', 29.90, 'imagens/produtos/produto_6ab1180993c8e3.23288574.jpg', 1, 1, '2026-09-20 21:15:51'),
-(8, 'Brunch Lumière', '', 'Seleção da casa para uma manhã tranquila.', 39.90, 'imagens/produtos/produto_6ab1173bcf02a5.35349881.jpg', 0, 1, '2026-09-20 21:15:51'),
-(9, 'Café Lumière', '', 'Café especial da casa preparado com grãos selecionados.', 9.90, 'imagens/produtos/produto_6ab11730e2ddf9.73793745.jpg', 1, 1, '2026-09-20 22:08:31'),
-(10, 'Cappuccino Cremoso', '', 'Cappuccino preparado com café espresso, leite vaporizado e espuma cremosa.', 14.90, 'imagens/produtos/produto_6ab11724925b78.25292596.jpg', 1, 1, '2026-09-20 22:08:31'),
-(11, 'Chocolate Quente', '', 'Chocolate quente cremoso, perfeito para acompanhar uma boa leitura.', 13.90, 'imagens/produtos/produto_6ab1171b300505.10799573.jpg', 0, 1, '2026-09-20 22:08:31'),
-(13, 'Cheesecake de Frutas Vermelhas', '', 'Cheesecake artesanal com cobertura de frutas vermelhas.', 18.90, 'imagens/produtos/produto_6ab1170f9e5549.32889733.jpg', 1, 1, '2026-09-20 22:08:31'),
-(14, 'Brownie com Sorvete', '', 'Brownie artesanal servido com uma bola de sorvete.', 19.90, 'imagens/produtos/produto_6ab11706c5b482.37424132.jpg', 0, 1, '2026-09-20 22:08:31'),
-(15, 'Combo Leitura', '', 'Café especial acompanhado de uma sobremesa da casa.', 24.90, 'imagens/produtos/produto_6ab116f75439a2.88025988.jpg', 1, 1, '2026-09-20 22:08:31'),
-(16, 'Combo Lumière', '', 'Cappuccino, brownie e uma bebida especial da casa.', 29.90, 'imagens/produtos/produto_6ab0b49234b8a5.13326299.jpg', 0, 1, '2026-09-20 22:08:31');
+(1, 'Espresso Lumière', '', 'Espresso intenso e aromático, preparado na hora.', 8.90, 'imagens/produtos/produto_6ab127697fcf71.51799862.jpg', 1, 1, '2026-09-20 21:15:51'),
+(2, 'Cappuccino Clássico', '', 'Espresso, leite vaporizado e espuma cremosa.', 13.90, 'imagens/produtos/produto_6ab12761b2dc08.41227686.jpg', 1, 1, '2026-09-20 21:15:51'),
+(3, 'Cold Brew', '', 'Café extraído a frio, leve e refrescante.', 14.90, 'imagens/produtos/produto_6ab127588a6575.59803245.jpg', 0, 1, '2026-09-20 21:15:51'),
+(4, 'Chocolate da Casa', '', 'Chocolate quente cremoso com toque de baunilha.', 15.90, 'imagens/produtos/produto_6ab12748ede0b7.93734910.jpg', 0, 1, '2026-09-20 21:15:51'),
+(6, 'Cookie Lumière', '', 'Cookie artesanal com chocolate meio amargo.', 9.90, 'imagens/produtos/produto_6ab1274291d9e1.07019199.jpg', 0, 1, '2026-09-20 21:15:51'),
+(7, 'Café + Livro', '', 'Um café especial acompanhado de desconto em um livro selecionado.', 29.90, 'imagens/produtos/produto_6ab1273bc02a79.35583574.jpg', 1, 1, '2026-09-20 21:15:51'),
+(8, 'Brunch Lumière', '', 'Seleção da casa para uma manhã tranquila.', 39.90, 'imagens/produtos/produto_6ab12733b6a3d5.73920462.jpg', 0, 1, '2026-09-20 21:15:51'),
+(9, 'Café Lumière', '', 'Café especial da casa preparado com grãos selecionados.', 9.90, 'imagens/produtos/produto_6ab12729526d43.64887048.jpg', 1, 1, '2026-09-20 22:08:31'),
+(10, 'Cappuccino Cremoso', '', 'Cappuccino preparado com café espresso, leite vaporizado e espuma cremosa.', 14.90, 'imagens/produtos/produto_6ab127221f98e8.07828234.jpg', 1, 1, '2026-09-20 22:08:31'),
+(11, 'Chocolate Quente', '', 'Chocolate quente cremoso, perfeito para acompanhar uma boa leitura.', 13.90, 'imagens/produtos/produto_6ab126fc0ac724.27781972.jpg', 0, 1, '2026-09-20 22:08:31'),
+(13, 'Cheesecake de Frutas Vermelhas', '', 'Cheesecake artesanal com cobertura de frutas vermelhas.', 18.90, 'imagens/produtos/produto_6ab126ecd9d217.47857160.jpg', 1, 1, '2026-09-20 22:08:31'),
+(14, 'Brownie com Sorvete', '', 'Brownie artesanal servido com uma bola de sorvete.', 19.90, 'imagens/produtos/produto_6ab126e6696eb4.58839718.jpg', 0, 1, '2026-09-20 22:08:31'),
+(15, 'Combo Leitura', '', 'Café especial acompanhado de uma sobremesa da casa.', 24.90, 'imagens/produtos/produto_6ab126c22b9900.76960281.jpg', 1, 1, '2026-09-20 22:08:31'),
+(16, 'Combo Lumière', '', 'Cappuccino, brownie e uma bebida especial da casa.', 29.90, 'imagens/produtos/produto_6ab126b1102325.01721259.jpg', 0, 1, '2026-09-20 22:08:31');
 
 -- --------------------------------------------------------
 
@@ -195,6 +220,13 @@ CREATE TABLE `reservas` (
   `criado_em` timestamp NOT NULL DEFAULT current_timestamp(),
   `status` enum('pendente','confirmada','cancelada') DEFAULT 'pendente'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `reservas`
+--
+
+INSERT INTO `reservas` (`id`, `usuario_id`, `evento_id`, `data_reserva`, `hora_reserva`, `pessoas`, `observacoes`, `criado_em`, `status`) VALUES
+(1, 1, 2, '2026-10-17', '16:00:00', 1, '', '2026-09-21 12:17:33', 'pendente');
 
 -- --------------------------------------------------------
 
@@ -220,6 +252,13 @@ INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `criado_em`) VALUES
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices de tabela `administradores`
+--
+ALTER TABLE `administradores`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Índices de tabela `eventos`
@@ -280,6 +319,12 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de tabela `administradores`
+--
+ALTER TABLE `administradores`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de tabela `eventos`
 --
 ALTER TABLE `eventos`
@@ -295,19 +340,19 @@ ALTER TABLE `livros`
 -- AUTO_INCREMENT de tabela `mensagens`
 --
 ALTER TABLE `mensagens`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `pedido_itens`
 --
 ALTER TABLE `pedido_itens`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
@@ -319,7 +364,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `reservas`
 --
 ALTER TABLE `reservas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
