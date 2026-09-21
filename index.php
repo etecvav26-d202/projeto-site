@@ -101,8 +101,7 @@ $eventos = $pdo->query("
         <div class="cards">
             <article class="card reveal">
                 <div class="card-image">
-                    <div class="image-placeholder">
-                        <img
+                    <img
                         src="imagens/cafe_lumiere_ambiente.jpg"
                         alt="Ambiente da cafeteria"
                     >
