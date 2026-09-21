@@ -169,12 +169,12 @@ require '../../includes/header.php';
                         <label for="imagem">
                             Imagem
                         </label>
-
+                        
                         <input
-                            type="text"
-                            id="imagem"
-                            name="imagem"
-                            placeholder="assets/img/nome-do-livro.jpg"
+                        type="url"
+                        id="imagem"
+                        name="imagem"
+                        placeholder="https://exemplo.com/imagem.jpg"
                         >
 
                     </div>

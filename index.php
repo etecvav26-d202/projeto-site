@@ -259,9 +259,6 @@ $eventos = $pdo->query("
             <?php foreach ($livros as $livro): ?>
                 <article class="card reveal">
                     <div class="book-cover">
-                        <div class="image-placeholder">
-                            CAPA DO LIVRO
-                        </div>
 
                         <img
                             src="<?= htmlspecialchars($livro['imagem']) ?>"

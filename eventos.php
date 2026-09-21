@@ -42,19 +42,19 @@ require 'includes/header.php';
 
                 <article class="event-card reveal">
 
-                    <div class="event-image">
+                <div class="event-image">
+    <?php if (!empty($evento['imagem'])): ?>
+        <img
+            src="<?= htmlspecialchars($evento['imagem']) ?>"
+            alt="<?= htmlspecialchars($evento['titulo']) ?>"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+        >
+    <?php endif; ?>
 
-                        <img
-                            src="<?= htmlspecialchars($evento['imagem']) ?>"
-                            alt="<?= htmlspecialchars($evento['titulo']) ?>"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
-                        >
-
-                        <div class="image-placeholder" style="display: none;">
-                            IMAGEM DO EVENTO
-                        </div>
-
-                    </div>
+    <div class="image-placeholder" <?= !empty($evento['imagem']) ? 'style="display: none;"' : '' ?>>
+        IMAGEM DO EVENTO
+    </div>
+</div>
 
                     <div class="event-info">
 

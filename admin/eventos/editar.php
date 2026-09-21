@@ -202,14 +202,15 @@ require '../../includes/header.php';
                     </div>
 
                     <div class="form-group">
-                        <label for="imagem">Imagem</label>
-                        <input
-                            type="text"
-                            id="imagem"
-                            name="imagem"
-                            value="<?= htmlspecialchars($evento['imagem'] ?? '') ?>"
-                        >
-                    </div>
+    <label for="imagem">Imagem do evento</label>
+    <input
+        type="url"
+        id="imagem"
+        name="imagem"
+        value="<?= htmlspecialchars($evento['imagem'] ?? '') ?>"
+        placeholder="https://exemplo.com/imagem.jpg"
+    >
+</div>
 
                 </div>
 

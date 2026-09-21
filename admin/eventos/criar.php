@@ -141,15 +141,10 @@ require '../../includes/header.php';
                         <label for="preco">Preço</label>
                         <input type="number" id="preco" name="preco" min="0" step="0.01" value="0">
                     </div>
-
+                    
                     <div class="form-group">
-                        <label for="imagem">Imagem</label>
-                        <input
-                            type="text"
-                            id="imagem"
-                            name="imagem"
-                            placeholder="assets/img/nome-do-evento.jpg"
-                        >
+                        <label for="imagem">Imagem do evento</label>
+                        <input type="url" id="imagem" name="imagem" placeholder="https://exemplo.com/imagem.jpg">
                     </div>
 
                 </div>
