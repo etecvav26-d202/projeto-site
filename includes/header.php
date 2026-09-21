@@ -2,6 +2,11 @@
 if (!isset($tituloPagina)) {
     $tituloPagina = 'Café Lumière';
 }
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -98,18 +103,21 @@ if (!isset($tituloPagina)) {
             </a>
 
             <a
-                href="login.php"
-                class="nav-login"
-            >
-                Login
-            </a>
-
-            <a
                 href="carrinho.php"
                 class="nav-cart"
             >
                 Carrinho
             </a>
+
+            <?php if (isset($_SESSION['usuario_id'])): ?>
+                
+                <a href="minha-conta.php">Minha conta</a>
+                
+                <?php else: ?>
+                    
+                    <a href="login.php">Entrar</a>
+                    
+                    <?php endif; ?>
         </nav>
     </div>
 </header>
