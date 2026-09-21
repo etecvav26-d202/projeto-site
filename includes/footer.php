@@ -8,9 +8,9 @@
                 class="logo footer-logo"
             >
 
-                <span class="logo-symbol">
-                    L
-                </span>
+                        <span class="logo-symbol">
+                <img src="logo/logo.png" alt="Café Lumière">
+            </span>
 
                 <span class="logo-text">
                     Café Lumière
